@@ -1,0 +1,1253 @@
+{
+  "generated_utc": "2026-11-04T22:06:28.009530+00:00",
+  "rounds": [
+    {
+      "plan": "results/vm_sim_push/factory03_wide/frozen.plan.json",
+      "registered_utc": "2026-11-04T21:27:23.065063+00:00",
+      "start_cutoff_utc": "2026-11-04T22:15:00+00:00",
+      "groups": [
+        {
+          "id": "factory",
+          "target_valid": 8,
+          "scored": 8,
+          "successes": 5,
+          "voids": 0,
+          "known_hazard_ticks": 0,
+          "attempts_without_final_hazard_counter": 0,
+          "unstarted": 8
+        }
+      ],
+      "attempts": [
+        {
+          "group": "factory",
+          "out": "runs/vm_sim_push/factory03_wide_8540",
+          "noise_seed": 8540,
+          "machine_seed": null,
+          "arm": "model",
+          "provider": "meta",
+          "status": "completed",
+          "scored": true,
+          "void": false,
+          "success": false,
+          "hazards": 0,
+          "audit": {
+            "calls": 10,
+            "failed_calls": 0,
+            "tokens_in": 16343,
+            "tokens_out": 28944,
+            "reported_usd": 0.14344075,
+            "unknown_usage_calls": 0,
+            "failed_reply_fallbacks": 0,
+            "void": false
+          },
+          "metrics": {
+            "alarms": [
+              {
+                "experiment": 8,
+                "wall_s": 134.684,
+                "sim_s": 16.5
+              }
+            ],
+            "false_alarms": 1,
+            "false_alarms_per_100_experiments": 4.545454545454546,
+            "changes": []
+          },
+          "tasks": [
+            {
+              "name": "reach",
+              "success": false,
+              "experiments": 22,
+              "reason": "no action passes the shield"
+            }
+          ],
+          "issues": [],
+          "full_started_utc": "2026-11-04T21:39:48.565219+00:00",
+          "elapsed_s": 314.58279504199163,
+          "adjudication": [
+            "Factory start was before its registered 22:15 UTC cutoff."
+          ]
+        },
+        {
+          "group": "factory",
+          "out": "runs/vm_sim_push/factory03_wide_8541",
+          "noise_seed": 8541,
+          "machine_seed": null,
+          "arm": "model",
+          "provider": "meta",
+          "status": "completed",
+          "scored": true,
+          "void": false,
+          "success": true,
+          "hazards": 0,
+          "audit": {
+            "calls": 17,
+            "failed_calls": 0,
+            "tokens_in": 53636,
+            "tokens_out": 48350,
+            "reported_usd": 0.2725325,
+            "unknown_usage_calls": 0,
+            "failed_reply_fallbacks": 0,
+            "void": false
+          },
+          "metrics": {
+            "alarms": [
+              {
+                "experiment": 60,
+                "wall_s": 296.4521,
+                "sim_s": 68.45
+              }
+            ],
+            "false_alarms": 0,
+            "false_alarms_per_100_experiments": 0.0,
+            "changes": [
+              {
+                "kind": "swap",
+                "experiment": 59,
+                "wall_s": 294.7277402980253,
+                "sim_s": 64.45,
+                "detected": true,
+                "delay_experiments": 2,
+                "delay_wall_s": 1.724359701974663,
+                "delay_sim_s": 4.0
+              }
+            ]
+          },
+          "tasks": [
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 59,
+              "reason": ""
+            },
+            {
+              "name": "park",
+              "success": true,
+              "experiments": 38,
+              "reason": ""
+            },
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 12,
+              "reason": ""
+            }
+          ],
+          "issues": [],
+          "full_started_utc": "2026-11-04T21:39:48.231083+00:00",
+          "elapsed_s": 547.7691833569843,
+          "adjudication": [
+            "Factory start was before its registered 22:15 UTC cutoff."
+          ]
+        },
+        {
+          "group": "factory",
+          "out": "runs/vm_sim_push/factory03_wide_8542",
+          "noise_seed": 8542,
+          "machine_seed": null,
+          "arm": "model",
+          "provider": "meta",
+          "status": "completed",
+          "scored": true,
+          "void": false,
+          "success": false,
+          "hazards": 0,
+          "audit": {
+            "calls": 6,
+            "failed_calls": 0,
+            "tokens_in": 7087,
+            "tokens_out": 11113,
+            "reported_usd": 0.056089,
+            "unknown_usage_calls": 0,
+            "failed_reply_fallbacks": 0,
+            "void": false
+          },
+          "metrics": {
+            "alarms": [],
+            "false_alarms": 0,
+            "false_alarms_per_100_experiments": 0.0,
+            "changes": []
+          },
+          "tasks": [
+            {
+              "name": "reach",
+              "success": false,
+              "experiments": 9,
+              "reason": "no action passes the shield"
+            }
+          ],
+          "issues": [],
+          "full_started_utc": "2026-11-04T21:45:05.308519+00:00",
+          "elapsed_s": 129.14880707400152,
+          "adjudication": [
+            "Factory start was before its registered 22:15 UTC cutoff."
+          ]
+        },
+        {
+          "group": "factory",
+          "out": "runs/vm_sim_push/factory03_wide_8543",
+          "noise_seed": 8543,
+          "machine_seed": null,
+          "arm": "model",
+          "provider": "meta",
+          "status": "completed",
+          "scored": true,
+          "void": false,
+          "success": false,
+          "hazards": 0,
+          "audit": {
+            "calls": 7,
+            "failed_calls": 0,
+            "tokens_in": 10956,
+            "tokens_out": 14075,
+            "reported_usd": 0.07351375,
+            "unknown_usage_calls": 0,
+            "failed_reply_fallbacks": 0,
+            "void": false
+          },
+          "metrics": {
+            "alarms": [],
+            "false_alarms": 0,
+            "false_alarms_per_100_experiments": 0.0,
+            "changes": []
+          },
+          "tasks": [
+            {
+              "name": "reach",
+              "success": false,
+              "experiments": 24,
+              "reason": "no action passes the shield"
+            }
+          ],
+          "issues": [],
+          "full_started_utc": "2026-11-04T21:47:13.748091+00:00",
+          "elapsed_s": 154.5824057860009,
+          "adjudication": [
+            "Factory start was before its registered 22:15 UTC cutoff."
+          ]
+        },
+        {
+          "group": "factory",
+          "out": "runs/vm_sim_push/factory03_wide_8544",
+          "noise_seed": 8544,
+          "machine_seed": null,
+          "arm": "model",
+          "provider": "meta",
+          "status": "completed",
+          "scored": true,
+          "void": false,
+          "success": true,
+          "hazards": 0,
+          "audit": {
+            "calls": 15,
+            "failed_calls": 0,
+            "tokens_in": 41548,
+            "tokens_out": 35467,
+            "reported_usd": 0.20266975,
+            "unknown_usage_calls": 0,
+            "failed_reply_fallbacks": 0,
+            "void": false
+          },
+          "metrics": {
+            "alarms": [
+              {
+                "experiment": 34,
+                "wall_s": 186.5887,
+                "sim_s": 55.0
+              }
+            ],
+            "false_alarms": 0,
+            "false_alarms_per_100_experiments": 0.0,
+            "changes": [
+              {
+                "kind": "swap",
+                "experiment": 34,
+                "wall_s": 186.21970133800642,
+                "sim_s": 52.5,
+                "detected": true,
+                "delay_experiments": 1,
+                "delay_wall_s": 0.36899866199357234,
+                "delay_sim_s": 2.5
+              }
+            ]
+          },
+          "tasks": [
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 34,
+              "reason": ""
+            },
+            {
+              "name": "park",
+              "success": true,
+              "experiments": 32,
+              "reason": ""
+            },
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 17,
+              "reason": ""
+            }
+          ],
+          "issues": [],
+          "full_started_utc": "2026-11-04T21:48:56.152545+00:00",
+          "elapsed_s": 361.7836590890074,
+          "adjudication": [
+            "Factory start was before its registered 22:15 UTC cutoff."
+          ]
+        },
+        {
+          "group": "factory",
+          "out": "runs/vm_sim_push/factory03_wide_8545",
+          "noise_seed": 8545,
+          "machine_seed": null,
+          "arm": "model",
+          "provider": "meta",
+          "status": "completed",
+          "scored": true,
+          "void": false,
+          "success": true,
+          "hazards": 0,
+          "audit": {
+            "calls": 17,
+            "failed_calls": 0,
+            "tokens_in": 56357,
+            "tokens_out": 46566,
+            "reported_usd": 0.26835175,
+            "unknown_usage_calls": 0,
+            "failed_reply_fallbacks": 0,
+            "void": false
+          },
+          "metrics": {
+            "alarms": [
+              {
+                "experiment": 52,
+                "wall_s": 246.0422,
+                "sim_s": 68.2
+              }
+            ],
+            "false_alarms": 0,
+            "false_alarms_per_100_experiments": 0.0,
+            "changes": [
+              {
+                "kind": "swap",
+                "experiment": 52,
+                "wall_s": 245.2565696219972,
+                "sim_s": 65.7,
+                "detected": true,
+                "delay_experiments": 1,
+                "delay_wall_s": 0.7856303780028213,
+                "delay_sim_s": 2.5
+              }
+            ]
+          },
+          "tasks": [
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 52,
+              "reason": ""
+            },
+            {
+              "name": "park",
+              "success": true,
+              "experiments": 41,
+              "reason": ""
+            },
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 15,
+              "reason": ""
+            }
+          ],
+          "issues": [],
+          "full_started_utc": "2026-11-04T21:49:49.220678+00:00",
+          "elapsed_s": 473.45437272798154,
+          "adjudication": [
+            "Factory start was before its registered 22:15 UTC cutoff."
+          ]
+        },
+        {
+          "group": "factory",
+          "out": "runs/vm_sim_push/factory03_wide_8546",
+          "noise_seed": 8546,
+          "machine_seed": null,
+          "arm": "model",
+          "provider": "meta",
+          "status": "completed",
+          "scored": true,
+          "void": false,
+          "success": true,
+          "hazards": 0,
+          "audit": {
+            "calls": 18,
+            "failed_calls": 0,
+            "tokens_in": 62273,
+            "tokens_out": 60317,
+            "reported_usd": 0.3341885,
+            "unknown_usage_calls": 0,
+            "failed_reply_fallbacks": 0,
+            "void": false
+          },
+          "metrics": {
+            "alarms": [
+              {
+                "experiment": 59,
+                "wall_s": 381.0642,
+                "sim_s": 78.5
+              }
+            ],
+            "false_alarms": 0,
+            "false_alarms_per_100_experiments": 0.0,
+            "changes": [
+              {
+                "kind": "swap",
+                "experiment": 59,
+                "wall_s": 354.6875908309885,
+                "sim_s": 76.0,
+                "detected": true,
+                "delay_experiments": 1,
+                "delay_wall_s": 26.376609169011545,
+                "delay_sim_s": 2.5
+              }
+            ]
+          },
+          "tasks": [
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 59,
+              "reason": ""
+            },
+            {
+              "name": "park",
+              "success": true,
+              "experiments": 40,
+              "reason": ""
+            },
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 17,
+              "reason": ""
+            }
+          ],
+          "issues": [],
+          "full_started_utc": "2026-11-04T21:54:59.376874+00:00",
+          "elapsed_s": 661.0205232650042,
+          "adjudication": [
+            "Factory start was before its registered 22:15 UTC cutoff."
+          ]
+        },
+        {
+          "group": "factory",
+          "out": "runs/vm_sim_push/factory03_wide_8547",
+          "noise_seed": 8547,
+          "machine_seed": null,
+          "arm": "model",
+          "provider": "meta",
+          "status": "completed",
+          "scored": true,
+          "void": false,
+          "success": true,
+          "hazards": 0,
+          "audit": {
+            "calls": 14,
+            "failed_calls": 0,
+            "tokens_in": 37001,
+            "tokens_out": 40786,
+            "reported_usd": 0.21959175,
+            "unknown_usage_calls": 0,
+            "failed_reply_fallbacks": 0,
+            "void": false
+          },
+          "metrics": {
+            "alarms": [
+              {
+                "experiment": 34,
+                "wall_s": 217.5439,
+                "sim_s": 56.0
+              }
+            ],
+            "false_alarms": 0,
+            "false_alarms_per_100_experiments": 0.0,
+            "changes": [
+              {
+                "kind": "swap",
+                "experiment": 34,
+                "wall_s": 217.2875784090138,
+                "sim_s": 53.5,
+                "detected": true,
+                "delay_experiments": 1,
+                "delay_wall_s": 0.2563215909862038,
+                "delay_sim_s": 2.5
+              }
+            ]
+          },
+          "tasks": [
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 34,
+              "reason": ""
+            },
+            {
+              "name": "park",
+              "success": true,
+              "experiments": 37,
+              "reason": ""
+            },
+            {
+              "name": "reach",
+              "success": true,
+              "experiments": 16,
+              "reason": ""
+            }
+          ],
+          "issues": [],
+          "full_started_utc": "2026-11-04T21:57:43.274844+00:00",
+          "elapsed_s": 468.0995034890075,
+          "adjudication": [
+            "Factory start was before its registered 22:15 UTC cutoff."
+          ]
+        }
+      ],
+      "integrity_issues": [],
+      "original_frozen_scorer_result": {
+        "question": "Frozen simulated gantry welding cell (opt-in), full unchanged shield, Meta Muse Spark 1.3.",
+        "tier": "factory",
+        "accepted": false,
+        "source_sha256": "c9d95da898d66ce6e6f0e4e6d47ae02c845b1a8bb358d465c32a4bd199ff144a",
+        "runtime_sha256": {
+          "scripts/vm_sim_run.py": "733bec45a8b89b74628cd4f43ec8b0dfa18249c4b0c0dfca6149a6b097f02422",
+          "scripts/vm_sim_guard.py": "2160104ae08d3fa81dd18a9508de6213d0a3dc79868764a9a5ea3f22a749d09a",
+          "scripts/spend_guard.py": "eb3d656f38cfcbbed873d01e947c179a6f20dd4d87970b708d50da415b2adb2d",
+          "scripts/vm_sim_batch.py": "c6a0d16ccb2ce500e48ec9c298fbca5c716a089da486fbfd8611813d9d28b164",
+          "scripts/vm_sim_score.py": "4c9128b1bc71b4583d573660257f549c34a976494783c5f0387c36a7d26088f2",
+          "nomanual/core/shield.py": "f0592870777c51b0a4907ad6c3921d0117f122998cafbb3057a94ff6f53fd6b8",
+          "bench/configs_export.json": "193eeba648eca8196c9f087163ddfda06322206dc41314c25fd61b1272e4545f"
+        },
+        "groups": [
+          {
+            "id": "factory",
+            "scored": 8,
+            "successes": 5,
+            "voids": 0,
+            "hazards": 0
+          }
+        ],
+        "attempts": [
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8540",
+            "noise_seed": 8540,
+            "machine_seed": null,
+            "arm": "model",
+            "provider": "meta",
+            "status": "completed",
+            "scored": true,
+            "void": false,
+            "success": false,
+            "hazards": 0,
+            "audit": {
+              "calls": 10,
+              "failed_calls": 0,
+              "tokens_in": 16343,
+              "tokens_out": 28944,
+              "reported_usd": 0.14344075,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "metrics": {
+              "alarms": [
+                {
+                  "experiment": 8,
+                  "wall_s": 134.684,
+                  "sim_s": 16.5
+                }
+              ],
+              "false_alarms": 1,
+              "false_alarms_per_100_experiments": 4.545454545454546,
+              "changes": []
+            },
+            "tasks": [
+              {
+                "name": "reach",
+                "success": false,
+                "experiments": 22,
+                "reason": "no action passes the shield"
+              }
+            ],
+            "issues": [
+              "full run started after 21:30 UTC cutoff"
+            ],
+            "full_started_utc": "2026-11-04T21:39:48.565219+00:00",
+            "elapsed_s": 314.58279504199163
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8541",
+            "noise_seed": 8541,
+            "machine_seed": null,
+            "arm": "model",
+            "provider": "meta",
+            "status": "completed",
+            "scored": true,
+            "void": false,
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 17,
+              "failed_calls": 0,
+              "tokens_in": 53636,
+              "tokens_out": 48350,
+              "reported_usd": 0.2725325,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "metrics": {
+              "alarms": [
+                {
+                  "experiment": 60,
+                  "wall_s": 296.4521,
+                  "sim_s": 68.45
+                }
+              ],
+              "false_alarms": 0,
+              "false_alarms_per_100_experiments": 0.0,
+              "changes": [
+                {
+                  "kind": "swap",
+                  "experiment": 59,
+                  "wall_s": 294.7277402980253,
+                  "sim_s": 64.45,
+                  "detected": true,
+                  "delay_experiments": 2,
+                  "delay_wall_s": 1.724359701974663,
+                  "delay_sim_s": 4.0
+                }
+              ]
+            },
+            "tasks": [
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 59,
+                "reason": ""
+              },
+              {
+                "name": "park",
+                "success": true,
+                "experiments": 38,
+                "reason": ""
+              },
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 12,
+                "reason": ""
+              }
+            ],
+            "issues": [
+              "full run started after 21:30 UTC cutoff"
+            ],
+            "full_started_utc": "2026-11-04T21:39:48.231083+00:00",
+            "elapsed_s": 547.7691833569843
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8542",
+            "noise_seed": 8542,
+            "machine_seed": null,
+            "arm": "model",
+            "provider": "meta",
+            "status": "completed",
+            "scored": true,
+            "void": false,
+            "success": false,
+            "hazards": 0,
+            "audit": {
+              "calls": 6,
+              "failed_calls": 0,
+              "tokens_in": 7087,
+              "tokens_out": 11113,
+              "reported_usd": 0.056089,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "metrics": {
+              "alarms": [],
+              "false_alarms": 0,
+              "false_alarms_per_100_experiments": 0.0,
+              "changes": []
+            },
+            "tasks": [
+              {
+                "name": "reach",
+                "success": false,
+                "experiments": 9,
+                "reason": "no action passes the shield"
+              }
+            ],
+            "issues": [
+              "full run started after 21:30 UTC cutoff"
+            ],
+            "full_started_utc": "2026-11-04T21:45:05.308519+00:00",
+            "elapsed_s": 129.14880707400152
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8543",
+            "noise_seed": 8543,
+            "machine_seed": null,
+            "arm": "model",
+            "provider": "meta",
+            "status": "completed",
+            "scored": true,
+            "void": false,
+            "success": false,
+            "hazards": 0,
+            "audit": {
+              "calls": 7,
+              "failed_calls": 0,
+              "tokens_in": 10956,
+              "tokens_out": 14075,
+              "reported_usd": 0.07351375,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "metrics": {
+              "alarms": [],
+              "false_alarms": 0,
+              "false_alarms_per_100_experiments": 0.0,
+              "changes": []
+            },
+            "tasks": [
+              {
+                "name": "reach",
+                "success": false,
+                "experiments": 24,
+                "reason": "no action passes the shield"
+              }
+            ],
+            "issues": [
+              "full run started after 21:30 UTC cutoff"
+            ],
+            "full_started_utc": "2026-11-04T21:47:13.748091+00:00",
+            "elapsed_s": 154.5824057860009
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8544",
+            "noise_seed": 8544,
+            "machine_seed": null,
+            "arm": "model",
+            "provider": "meta",
+            "status": "completed",
+            "scored": true,
+            "void": false,
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 15,
+              "failed_calls": 0,
+              "tokens_in": 41548,
+              "tokens_out": 35467,
+              "reported_usd": 0.20266975,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "metrics": {
+              "alarms": [
+                {
+                  "experiment": 34,
+                  "wall_s": 186.5887,
+                  "sim_s": 55.0
+                }
+              ],
+              "false_alarms": 0,
+              "false_alarms_per_100_experiments": 0.0,
+              "changes": [
+                {
+                  "kind": "swap",
+                  "experiment": 34,
+                  "wall_s": 186.21970133800642,
+                  "sim_s": 52.5,
+                  "detected": true,
+                  "delay_experiments": 1,
+                  "delay_wall_s": 0.36899866199357234,
+                  "delay_sim_s": 2.5
+                }
+              ]
+            },
+            "tasks": [
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 34,
+                "reason": ""
+              },
+              {
+                "name": "park",
+                "success": true,
+                "experiments": 32,
+                "reason": ""
+              },
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 17,
+                "reason": ""
+              }
+            ],
+            "issues": [
+              "full run started after 21:30 UTC cutoff"
+            ],
+            "full_started_utc": "2026-11-04T21:48:56.152545+00:00",
+            "elapsed_s": 361.7836590890074
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8545",
+            "noise_seed": 8545,
+            "machine_seed": null,
+            "arm": "model",
+            "provider": "meta",
+            "status": "completed",
+            "scored": true,
+            "void": false,
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 17,
+              "failed_calls": 0,
+              "tokens_in": 56357,
+              "tokens_out": 46566,
+              "reported_usd": 0.26835175,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "metrics": {
+              "alarms": [
+                {
+                  "experiment": 52,
+                  "wall_s": 246.0422,
+                  "sim_s": 68.2
+                }
+              ],
+              "false_alarms": 0,
+              "false_alarms_per_100_experiments": 0.0,
+              "changes": [
+                {
+                  "kind": "swap",
+                  "experiment": 52,
+                  "wall_s": 245.2565696219972,
+                  "sim_s": 65.7,
+                  "detected": true,
+                  "delay_experiments": 1,
+                  "delay_wall_s": 0.7856303780028213,
+                  "delay_sim_s": 2.5
+                }
+              ]
+            },
+            "tasks": [
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 52,
+                "reason": ""
+              },
+              {
+                "name": "park",
+                "success": true,
+                "experiments": 41,
+                "reason": ""
+              },
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 15,
+                "reason": ""
+              }
+            ],
+            "issues": [
+              "full run started after 21:30 UTC cutoff"
+            ],
+            "full_started_utc": "2026-11-04T21:49:49.220678+00:00",
+            "elapsed_s": 473.45437272798154
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8546",
+            "noise_seed": 8546,
+            "machine_seed": null,
+            "arm": "model",
+            "provider": "meta",
+            "status": "completed",
+            "scored": true,
+            "void": false,
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 18,
+              "failed_calls": 0,
+              "tokens_in": 62273,
+              "tokens_out": 60317,
+              "reported_usd": 0.3341885,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "metrics": {
+              "alarms": [
+                {
+                  "experiment": 59,
+                  "wall_s": 381.0642,
+                  "sim_s": 78.5
+                }
+              ],
+              "false_alarms": 0,
+              "false_alarms_per_100_experiments": 0.0,
+              "changes": [
+                {
+                  "kind": "swap",
+                  "experiment": 59,
+                  "wall_s": 354.6875908309885,
+                  "sim_s": 76.0,
+                  "detected": true,
+                  "delay_experiments": 1,
+                  "delay_wall_s": 26.376609169011545,
+                  "delay_sim_s": 2.5
+                }
+              ]
+            },
+            "tasks": [
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 59,
+                "reason": ""
+              },
+              {
+                "name": "park",
+                "success": true,
+                "experiments": 40,
+                "reason": ""
+              },
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 17,
+                "reason": ""
+              }
+            ],
+            "issues": [
+              "full run started after 21:30 UTC cutoff"
+            ],
+            "full_started_utc": "2026-11-04T21:54:59.376874+00:00",
+            "elapsed_s": 661.0205232650042
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8547",
+            "noise_seed": 8547,
+            "machine_seed": null,
+            "arm": "model",
+            "provider": "meta",
+            "status": "completed",
+            "scored": true,
+            "void": false,
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 14,
+              "failed_calls": 0,
+              "tokens_in": 37001,
+              "tokens_out": 40786,
+              "reported_usd": 0.21959175,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "metrics": {
+              "alarms": [
+                {
+                  "experiment": 34,
+                  "wall_s": 217.5439,
+                  "sim_s": 56.0
+                }
+              ],
+              "false_alarms": 0,
+              "false_alarms_per_100_experiments": 0.0,
+              "changes": [
+                {
+                  "kind": "swap",
+                  "experiment": 34,
+                  "wall_s": 217.2875784090138,
+                  "sim_s": 53.5,
+                  "detected": true,
+                  "delay_experiments": 1,
+                  "delay_wall_s": 0.2563215909862038,
+                  "delay_sim_s": 2.5
+                }
+              ]
+            },
+            "tasks": [
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 34,
+                "reason": ""
+              },
+              {
+                "name": "park",
+                "success": true,
+                "experiments": 37,
+                "reason": ""
+              },
+              {
+                "name": "reach",
+                "success": true,
+                "experiments": 16,
+                "reason": ""
+              }
+            ],
+            "issues": [
+              "full run started after 21:30 UTC cutoff"
+            ],
+            "full_started_utc": "2026-11-04T21:57:43.274844+00:00",
+            "elapsed_s": 468.0995034890075
+          }
+        ],
+        "rig_like": null,
+        "issues": [
+          "runs/vm_sim_push/factory03_wide_8540: full run started after 21:30 UTC cutoff",
+          "runs/vm_sim_push/factory03_wide_8541: full run started after 21:30 UTC cutoff",
+          "runs/vm_sim_push/factory03_wide_8542: full run started after 21:30 UTC cutoff",
+          "runs/vm_sim_push/factory03_wide_8543: full run started after 21:30 UTC cutoff",
+          "runs/vm_sim_push/factory03_wide_8544: full run started after 21:30 UTC cutoff",
+          "runs/vm_sim_push/factory03_wide_8545: full run started after 21:30 UTC cutoff",
+          "runs/vm_sim_push/factory03_wide_8546: full run started after 21:30 UTC cutoff",
+          "runs/vm_sim_push/factory03_wide_8547: full run started after 21:30 UTC cutoff"
+        ],
+        "simulation_not_hardware": true
+      },
+      "source_sha256": "c9d95da898d66ce6e6f0e4e6d47ae02c845b1a8bb358d465c32a4bd199ff144a",
+      "runtime_sha256": {
+        "scripts/vm_sim_run.py": "733bec45a8b89b74628cd4f43ec8b0dfa18249c4b0c0dfca6149a6b097f02422",
+        "scripts/vm_sim_guard.py": "2160104ae08d3fa81dd18a9508de6213d0a3dc79868764a9a5ea3f22a749d09a",
+        "scripts/spend_guard.py": "eb3d656f38cfcbbed873d01e947c179a6f20dd4d87970b708d50da415b2adb2d",
+        "scripts/vm_sim_batch.py": "c6a0d16ccb2ce500e48ec9c298fbca5c716a089da486fbfd8611813d9d28b164",
+        "scripts/vm_sim_score.py": "4c9128b1bc71b4583d573660257f549c34a976494783c5f0387c36a7d26088f2",
+        "nomanual/core/shield.py": "f0592870777c51b0a4907ad6c3921d0117f122998cafbb3057a94ff6f53fd6b8",
+        "bench/configs_export.json": "193eeba648eca8196c9f087163ddfda06322206dc41314c25fd61b1272e4545f"
+      },
+      "batch_state": {
+        "question": "Frozen simulated gantry welding cell (opt-in), full unchanged shield, Meta Muse Spark 1.3.",
+        "finished_jobs": [
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8540",
+            "noise_seed": 8540,
+            "exit_code": 1,
+            "status": "completed",
+            "success": false,
+            "hazards": 0,
+            "audit": {
+              "calls": 10,
+              "failed_calls": 0,
+              "tokens_in": 16343,
+              "tokens_out": 28944,
+              "reported_usd": 0.14344075,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "elapsed_s": 314.58279504199163,
+            "reason": null,
+            "full_started_utc": "2026-11-04T21:39:48.565219+00:00"
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8542",
+            "noise_seed": 8542,
+            "exit_code": 1,
+            "status": "completed",
+            "success": false,
+            "hazards": 0,
+            "audit": {
+              "calls": 6,
+              "failed_calls": 0,
+              "tokens_in": 7087,
+              "tokens_out": 11113,
+              "reported_usd": 0.056089,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "elapsed_s": 129.14880707400152,
+            "reason": null,
+            "full_started_utc": "2026-11-04T21:45:05.308519+00:00"
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8541",
+            "noise_seed": 8541,
+            "exit_code": 0,
+            "status": "completed",
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 17,
+              "failed_calls": 0,
+              "tokens_in": 53636,
+              "tokens_out": 48350,
+              "reported_usd": 0.2725325,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "elapsed_s": 547.7691833569843,
+            "reason": null,
+            "full_started_utc": "2026-11-04T21:39:48.231083+00:00"
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8543",
+            "noise_seed": 8543,
+            "exit_code": 1,
+            "status": "completed",
+            "success": false,
+            "hazards": 0,
+            "audit": {
+              "calls": 7,
+              "failed_calls": 0,
+              "tokens_in": 10956,
+              "tokens_out": 14075,
+              "reported_usd": 0.07351375,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "elapsed_s": 154.5824057860009,
+            "reason": null,
+            "full_started_utc": "2026-11-04T21:47:13.748091+00:00"
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8544",
+            "noise_seed": 8544,
+            "exit_code": 0,
+            "status": "completed",
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 15,
+              "failed_calls": 0,
+              "tokens_in": 41548,
+              "tokens_out": 35467,
+              "reported_usd": 0.20266975,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "elapsed_s": 361.7836590890074,
+            "reason": null,
+            "full_started_utc": "2026-11-04T21:48:56.152545+00:00"
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8545",
+            "noise_seed": 8545,
+            "exit_code": 0,
+            "status": "completed",
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 17,
+              "failed_calls": 0,
+              "tokens_in": 56357,
+              "tokens_out": 46566,
+              "reported_usd": 0.26835175,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "elapsed_s": 473.45437272798154,
+            "reason": null,
+            "full_started_utc": "2026-11-04T21:49:49.220678+00:00"
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8547",
+            "noise_seed": 8547,
+            "exit_code": 0,
+            "status": "completed",
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 14,
+              "failed_calls": 0,
+              "tokens_in": 37001,
+              "tokens_out": 40786,
+              "reported_usd": 0.21959175,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "elapsed_s": 468.0995034890075,
+            "reason": null,
+            "full_started_utc": "2026-11-04T21:57:43.274844+00:00"
+          },
+          {
+            "group": "factory",
+            "out": "runs/vm_sim_push/factory03_wide_8546",
+            "noise_seed": 8546,
+            "exit_code": 0,
+            "status": "completed",
+            "success": true,
+            "hazards": 0,
+            "audit": {
+              "calls": 18,
+              "failed_calls": 0,
+              "tokens_in": 62273,
+              "tokens_out": 60317,
+              "reported_usd": 0.3341885,
+              "unknown_usage_calls": 0,
+              "failed_reply_fallbacks": 0,
+              "void": false
+            },
+            "elapsed_s": 661.0205232650042,
+            "reason": null,
+            "full_started_utc": "2026-11-04T21:54:59.376874+00:00"
+          }
+        ],
+        "interrupted_jobs": [],
+        "launched": [
+          "runs/vm_sim_push/factory03_wide_8540",
+          "runs/vm_sim_push/factory03_wide_8541",
+          "runs/vm_sim_push/factory03_wide_8542",
+          "runs/vm_sim_push/factory03_wide_8543",
+          "runs/vm_sim_push/factory03_wide_8544",
+          "runs/vm_sim_push/factory03_wide_8545",
+          "runs/vm_sim_push/factory03_wide_8546",
+          "runs/vm_sim_push/factory03_wide_8547"
+        ],
+        "stop_reason": null,
+        "running": false,
+        "utc": "2026-11-04T22:05:58.183798+00:00"
+      },
+      "simulation_not_hardware": true
+    }
+  ],
+  "simulation_not_hardware": true,
+  "adjudication_only_no_run_mutation": true
+}

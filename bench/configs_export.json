@@ -1,0 +1,577 @@
+{
+ "board": {
+  "start": [
+   0.3,
+   0.2
+  ],
+  "target": {
+   "type": "circle",
+   "center": [
+    0.62,
+    0.66
+   ],
+   "r": 0.05
+  },
+  "hazards": [
+   {
+    "type": "rect",
+    "x0": 0.45,
+    "y0": 0.35,
+    "x1": 0.8,
+    "y1": 0.45
+   }
+  ],
+  "markers": [
+   [
+    0.0,
+    0.0
+   ],
+   [
+    1.0,
+    0.0
+   ],
+   [
+    1.0,
+    1.0
+   ],
+   [
+    0.0,
+    1.0
+   ]
+  ]
+ },
+ "draws": [
+  {
+   "draw": 1,
+   "seed": 1000,
+   "trap": false,
+   "config": {
+    "id": "m1000",
+    "roles": {
+     "B": "actuator",
+     "A": "actuator",
+     "C": "interlock",
+     "D": "mode"
+    },
+    "actuators": {
+     "A": {
+      "axis": "u",
+      "sign": 1,
+      "gain": 0.97
+     },
+     "B": {
+      "axis": "v",
+      "sign": -1,
+      "gain": 0.7
+     }
+    },
+    "interlock": {
+     "channel": "C",
+     "gates": [
+      "A",
+      "B"
+     ],
+     "threshold": 0.5
+    },
+    "mode": {
+     "channel": "D",
+     "threshold": 0.5,
+     "initial": 0
+    },
+    "conditional": [
+     {
+      "channel": "A",
+      "mode": 1,
+      "effect": {
+       "gain_mult": 2.0,
+       "sign_flip": null,
+       "axis_swap": null,
+       "stop": null,
+       "drop": null
+      }
+     }
+    ],
+    "thresholds": [
+     {
+      "axis": "v",
+      "op": ">",
+      "value": 0.191142,
+      "channel": "A",
+      "effect": {
+       "gain_mult": null,
+       "sign_flip": true,
+       "axis_swap": null,
+       "stop": null,
+       "drop": null
+      }
+     }
+    ],
+    "indicator": {
+     "present": false,
+     "shows": "none"
+    },
+    "start": [
+     0.244465,
+     0.140867
+    ]
+   }
+  },
+  {
+   "draw": 2,
+   "seed": 1001,
+   "trap": true,
+   "config": {
+    "id": "m1001",
+    "roles": {
+     "B": "actuator",
+     "C": "actuator",
+     "D": "interlock",
+     "A": "mode"
+    },
+    "actuators": {
+     "B": {
+      "axis": "v",
+      "sign": -1,
+      "gain": 1.23
+     },
+     "C": {
+      "axis": "u",
+      "sign": -1,
+      "gain": 1.18
+     }
+    },
+    "interlock": {
+     "channel": "D",
+     "gates": [
+      "B",
+      "C"
+     ],
+     "threshold": 0.3
+    },
+    "mode": {
+     "channel": "A",
+     "threshold": 0.2,
+     "initial": 0
+    },
+    "conditional": [],
+    "thresholds": [
+     {
+      "axis": "v",
+      "op": ">",
+      "value": 0.244465,
+      "channel": "B",
+      "effect": {
+       "gain_mult": null,
+       "sign_flip": null,
+       "axis_swap": null,
+       "stop": null,
+       "drop": {
+        "axis": "u",
+        "amount": 0.058
+       }
+      }
+     }
+    ],
+    "indicator": {
+     "present": true,
+     "shows": "mode"
+    },
+    "start": [
+     0.244465,
+     0.140867
+    ]
+   }
+  },
+  {
+   "draw": 3,
+   "seed": 1002,
+   "trap": false,
+   "config": {
+    "id": "m1002",
+    "roles": {
+     "B": "actuator",
+     "C": "actuator",
+     "A": "interlock",
+     "D": "mode"
+    },
+    "actuators": {
+     "B": {
+      "axis": "u",
+      "sign": -1,
+      "gain": 0.7
+     },
+     "C": {
+      "axis": "v",
+      "sign": 1,
+      "gain": 1.17
+     }
+    },
+    "interlock": {
+     "channel": "A",
+     "gates": [
+      "C"
+     ],
+     "threshold": 0.3
+    },
+    "mode": {
+     "channel": "D",
+     "threshold": 0.3,
+     "initial": 0
+    },
+    "conditional": [
+     {
+      "channel": "B",
+      "mode": 1,
+      "effect": {
+       "gain_mult": 0.25,
+       "sign_flip": null,
+       "axis_swap": null,
+       "stop": null,
+       "drop": null
+      }
+     }
+    ],
+    "thresholds": [],
+    "indicator": {
+     "present": true,
+     "shows": "mode"
+    },
+    "start": [
+     0.244465,
+     0.140867
+    ]
+   }
+  },
+  {
+   "draw": 4,
+   "seed": 1003,
+   "trap": true,
+   "config": {
+    "id": "m1003",
+    "roles": {
+     "A": "actuator",
+     "B": "actuator",
+     "C": "interlock",
+     "D": "mode"
+    },
+    "actuators": {
+     "A": {
+      "axis": "u",
+      "sign": -1,
+      "gain": 0.96
+     },
+     "B": {
+      "axis": "v",
+      "sign": -1,
+      "gain": 0.92
+     }
+    },
+    "interlock": {
+     "channel": "C",
+     "gates": [
+      "A",
+      "B"
+     ],
+     "threshold": 0.4
+    },
+    "mode": {
+     "channel": "D",
+     "threshold": 0.4,
+     "initial": 0
+    },
+    "conditional": [
+     {
+      "channel": "B",
+      "mode": 1,
+      "effect": {
+       "gain_mult": null,
+       "sign_flip": null,
+       "axis_swap": true,
+       "stop": null,
+       "drop": null
+      }
+     }
+    ],
+    "thresholds": [
+     {
+      "axis": "v",
+      "op": ">",
+      "value": 0.244465,
+      "channel": "B",
+      "effect": {
+       "gain_mult": null,
+       "sign_flip": null,
+       "axis_swap": null,
+       "stop": null,
+       "drop": {
+        "axis": "u",
+        "amount": 0.052
+       }
+      }
+     }
+    ],
+    "indicator": {
+     "present": true,
+     "shows": "mode"
+    },
+    "start": [
+     0.244465,
+     0.140867
+    ]
+   }
+  },
+  {
+   "draw": 5,
+   "seed": 1004,
+   "trap": false,
+   "config": {
+    "id": "m1004",
+    "roles": {
+     "C": "actuator",
+     "D": "actuator",
+     "A": "interlock",
+     "B": "mode"
+    },
+    "actuators": {
+     "C": {
+      "axis": "u",
+      "sign": 1,
+      "gain": 0.69
+     },
+     "D": {
+      "axis": "v",
+      "sign": 1,
+      "gain": 0.98
+     }
+    },
+    "interlock": {
+     "channel": "A",
+     "gates": [
+      "C",
+      "D"
+     ],
+     "threshold": 0.5
+    },
+    "mode": {
+     "channel": "B",
+     "threshold": 0.4,
+     "initial": 0
+    },
+    "conditional": [
+     {
+      "channel": "D",
+      "mode": 1,
+      "effect": {
+       "gain_mult": null,
+       "sign_flip": null,
+       "axis_swap": true,
+       "stop": null,
+       "drop": null
+      }
+     }
+    ],
+    "thresholds": [],
+    "indicator": {
+     "present": true,
+     "shows": "mode"
+    },
+    "start": [
+     0.244465,
+     0.140867
+    ]
+   }
+  },
+  {
+   "draw": 6,
+   "seed": 1005,
+   "trap": true,
+   "config": {
+    "id": "m1005",
+    "roles": {
+     "A": "actuator",
+     "C": "actuator",
+     "B": "interlock",
+     "D": "mode"
+    },
+    "actuators": {
+     "A": {
+      "axis": "v",
+      "sign": -1,
+      "gain": 0.89
+     },
+     "C": {
+      "axis": "u",
+      "sign": 1,
+      "gain": 0.99
+     }
+    },
+    "interlock": {
+     "channel": "B",
+     "gates": [
+      "A",
+      "C"
+     ],
+     "threshold": 0.3
+    },
+    "mode": {
+     "channel": "D",
+     "threshold": 0.2,
+     "initial": 0
+    },
+    "conditional": [],
+    "thresholds": [
+     {
+      "axis": "v",
+      "op": ">",
+      "value": 0.244465,
+      "channel": "A",
+      "effect": {
+       "gain_mult": null,
+       "sign_flip": null,
+       "axis_swap": null,
+       "stop": null,
+       "drop": {
+        "axis": "u",
+        "amount": 0.057
+       }
+      }
+     }
+    ],
+    "indicator": {
+     "present": true,
+     "shows": "mode"
+    },
+    "start": [
+     0.244465,
+     0.140867
+    ]
+   }
+  },
+  {
+   "draw": 7,
+   "seed": 1006,
+   "trap": false,
+   "config": {
+    "id": "m1006",
+    "roles": {
+     "B": "actuator",
+     "D": "actuator",
+     "A": "interlock",
+     "C": "mode"
+    },
+    "actuators": {
+     "B": {
+      "axis": "u",
+      "sign": 1,
+      "gain": 1.34
+     },
+     "D": {
+      "axis": "v",
+      "sign": -1,
+      "gain": 1.13
+     }
+    },
+    "interlock": {
+     "channel": "A",
+     "gates": [
+      "B"
+     ],
+     "threshold": 0.4
+    },
+    "mode": {
+     "channel": "C",
+     "threshold": 0.3,
+     "initial": 0
+    },
+    "conditional": [],
+    "thresholds": [],
+    "indicator": {
+     "present": true,
+     "shows": "mode"
+    },
+    "start": [
+     0.244465,
+     0.140867
+    ]
+   }
+  },
+  {
+   "draw": 8,
+   "seed": 1007,
+   "trap": true,
+   "config": {
+    "id": "m1007",
+    "roles": {
+     "B": "actuator",
+     "D": "actuator",
+     "C": "interlock",
+     "A": "mode"
+    },
+    "actuators": {
+     "B": {
+      "axis": "v",
+      "sign": 1,
+      "gain": 0.78
+     },
+     "D": {
+      "axis": "u",
+      "sign": 1,
+      "gain": 1.11
+     }
+    },
+    "interlock": {
+     "channel": "C",
+     "gates": [
+      "B",
+      "D"
+     ],
+     "threshold": 0.5
+    },
+    "mode": {
+     "channel": "A",
+     "threshold": 0.3,
+     "initial": 0
+    },
+    "conditional": [
+     {
+      "channel": "D",
+      "mode": 1,
+      "effect": {
+       "gain_mult": null,
+       "sign_flip": null,
+       "axis_swap": true,
+       "stop": null,
+       "drop": null
+      }
+     }
+    ],
+    "thresholds": [
+     {
+      "axis": "v",
+      "op": ">",
+      "value": 0.244465,
+      "channel": "B",
+      "effect": {
+       "gain_mult": null,
+       "sign_flip": null,
+       "axis_swap": null,
+       "stop": null,
+       "drop": {
+        "axis": "u",
+        "amount": 0.051
+       }
+      }
+     }
+    ],
+    "indicator": {
+     "present": false,
+     "shows": "none"
+    },
+    "start": [
+     0.244465,
+     0.140867
+    ]
+   }
+  }
+ ]
+}

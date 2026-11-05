@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nomanual"
+version = "0.1.0"
+description = "An AI that learns how an unfamiliar machine works by experimenting on it, then writes the manual."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = { text = "MIT" }
+dependencies = [
+    "pydantic>=2.7,<3",
+    "numpy>=1.26",
+    "pillow>=10.3",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2",
+    "hypothesis>=6.100",
+    "pytest-timeout>=2.3",
+]
+rig = ["pyserial>=3.5", "opencv-python-headless>=4.9"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["nomanual"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers -m 'not slow'"
+markers = [
+    "slow: long-running test, excluded from the default run (run with -m slow)",
+    "live: needs a live model API key; skipped when the key is absent",
+]
+timeout = 300
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

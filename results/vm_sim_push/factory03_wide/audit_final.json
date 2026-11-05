@@ -1,0 +1,7855 @@
+[
+  {
+    "out": "runs/vm_sim_push/factory03_wide_8540",
+    "status": "completed",
+    "simulation_not_hardware": true,
+    "note": "Privileged audit, never a new agent run or model prompt.",
+    "path_audit": {
+      "recorded_actions_recomputed": 22,
+      "hazards": 0,
+      "retained_hazards": 0,
+      "counter_matches": true,
+      "min_true_clearance": 0.11105485903340133,
+      "mode_at_segment_start": 0,
+      "no_new_actions_or_agent_outcome": true
+    },
+    "manual_truth": {
+      "precision": 1.0,
+      "coverage": 0.25,
+      "flagged": 0.75,
+      "asserted": 2,
+      "true_rules": 8,
+      "wrong": [],
+      "limitation": "Canonical rule identity; threshold location accuracy is separate, not proved by this precision."
+    },
+    "citation_support": {
+      "claims": [
+        {
+          "rule": "mode:D",
+          "cited": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "distinguishing_experiments": [
+            8,
+            12,
+            13,
+            14,
+            15
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "cited": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "distinguishing_experiments": [
+            8
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        }
+      ],
+      "claims_with_distinguishing_citation": 2,
+      "supported_claims_tested": 2,
+      "limitation": "Witness against a valid one-edit rival without the rule, using cited endpoints and full intervening mode history. This is not arbitrary natural-language entailment."
+    },
+    "planted_citation_attacks": {
+      "count": 6,
+      "rejected": 6,
+      "items": [
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule unknown:false; experiments 8]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule mode:D; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not pressing D toggles a hidden mode. [rule mode:D; experiments 8, 9, 10, 11, 12, 13, 14, 15]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule unknown:false; experiments 8]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 8, 9, 10, 11, 12, 13, 14, 15]",
+          "rejected": true
+        }
+      ],
+      "limitation": "Constructed unknown-rule, false-citation and negation attacks; not arbitrary semantic entailment."
+    },
+    "citation_existence": {
+      "claimed": 16,
+      "in_recorded_range": 16,
+      "limitation": "Existence is not proof of experimental support."
+    },
+    "fresh_observation_test": {
+      "new_observations": 16,
+      "probes": [
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6512175829921779,
+              0.3503930067710973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6489257743305077,
+              0.3881113981596129
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6550195990130939,
+              0.3491804429863478
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6507396468347718,
+              0.30271794078702857
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6533458918366777,
+              0.35033769398586145
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6116281079968738,
+              0.34675517161036645
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6502648368775588,
+              0.34870340892253526
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6924131975583577,
+              0.34858501231488287
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24664824065094973,
+              0.703437189845138
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.2499046619542797,
+              0.721390395114973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25120249383784843,
+              0.7005564272468597
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24737875710400173,
+              0.6737185595412876
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.2
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2508816565882074,
+              0.6982679257727843
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.7,
+            "pos": [
+              0.24037035707401327,
+              0.7486653057906381
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.2
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2500626394992259,
+              0.6988964918737088
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.7,
+            "pos": [
+              0.2571384424597345,
+              0.7428589884938601
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24942510129281437,
+              0.7521233542432378
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.2514641676443904,
+              0.7738422326874763
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2476510963048852,
+              0.7493537052415086
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.25249627516410916,
+              0.7264857880475784
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.2
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25066260928219214,
+              0.752463856697782
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.7,
+            "pos": [
+              0.23629118242672034,
+              0.8015449733424628
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2523062179204951,
+              0.7488316786170225
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.26388918028986325,
+              0.8026142071412194
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7491148321445908,
+              0.200073700459003
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7486610574997253,
+              0.24856504710525026
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7497408674872796,
+              0.19535928777098352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7472693454752471,
+              0.14622825862214586
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.753093386655606,
+              0.20130963341190425
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7063351806892332,
+              0.19802926599146778
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.747710537256711,
+              0.19940028754743394
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7970953980745124,
+              0.20031845770990958
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        }
+      ],
+      "planted_false_programs": 29,
+      "false_programs_rejected": 19,
+      "true_program_rejected_observations": 0,
+      "hazards": 0,
+      "per_claim": [
+        {
+          "rule": "mode:D",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": []
+        }
+      ],
+      "limitation": "Controlled reset probes with privileged true belief. Single-observation verifier test; not exhaustive proof or an agent gain."
+    }
+  },
+  {
+    "out": "runs/vm_sim_push/factory03_wide_8541",
+    "status": "completed",
+    "simulation_not_hardware": true,
+    "note": "Privileged audit, never a new agent run or model prompt.",
+    "path_audit": {
+      "recorded_actions_recomputed": 109,
+      "hazards": 0,
+      "retained_hazards": 0,
+      "counter_matches": true,
+      "min_true_clearance": 0.10392946099482572,
+      "mode_at_segment_start": 1,
+      "no_new_actions_or_agent_outcome": true
+    },
+    "manual_truth": {
+      "precision": 0.875,
+      "coverage": 0.875,
+      "flagged": 0.0,
+      "asserted": 8,
+      "true_rules": 8,
+      "wrong": [
+        "cond:C:gain_mult:0.25"
+      ],
+      "limitation": "Canonical rule identity; threshold location accuracy is separate, not proved by this precision."
+    },
+    "citation_support": {
+      "claims": [
+        {
+          "rule": "act:B:x-",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            59,
+            60,
+            61,
+            64,
+            65,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "act:C:y+",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            59,
+            60,
+            61,
+            64,
+            65,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "gate:A:B",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "gate:A:C",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            59,
+            60,
+            61,
+            63,
+            64,
+            65,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "mode:D",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            59,
+            60,
+            61,
+            63,
+            64,
+            65,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "cond:C:gain_mult:0.25",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [],
+          "canonical_rule_true": false,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "thr:y<:C:drop:x+",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            59,
+            60,
+            61,
+            64,
+            65,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            63,
+            64,
+            65,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        }
+      ],
+      "claims_with_distinguishing_citation": 7,
+      "supported_claims_tested": 8,
+      "limitation": "Witness against a valid one-edit rival without the rule, using cited endpoints and full intervening mode history. This is not arbitrary natural-language entailment."
+    },
+    "planted_citation_attacks": {
+      "count": 24,
+      "rejected": 24,
+      "items": [
+        {
+          "sentence": "B moves the tip left. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "B moves the tip left. [rule act:B:x-; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B moves the tip left. [rule act:B:x-; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule act:C:y+; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C moves the tip up. [rule act:C:y+; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule gate:A:B; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B only works while A is held. [rule gate:A:B; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "C only works while A is held. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "C only works while A is held. [rule gate:A:C; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C only works while A is held. [rule gate:A:C; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule mode:D; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not pressing D toggles a hidden mode. [rule mode:D; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "after pressing D (alternate mode), C moves at 0.25x speed. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "after pressing D (alternate mode), C moves at 0.25x speed. [rule cond:C:gain_mult:0.25; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not after pressing D (alternate mode), C moves at 0.25x speed. [rule cond:C:gain_mult:0.25; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "below y = 0.55, using C makes the tip jump right once. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "below y = 0.55, using C makes the tip jump right once. [rule thr:y<:C:drop:x+; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not below y = 0.55, using C makes the tip jump right once. [rule thr:y<:C:drop:x+; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        }
+      ],
+      "limitation": "Constructed unknown-rule, false-citation and negation attacks; not arbitrary semantic entailment."
+    },
+    "citation_existence": {
+      "claimed": 64,
+      "in_recorded_range": 64,
+      "limitation": "Existence is not proof of experimental support."
+    },
+    "fresh_observation_test": {
+      "new_observations": 16,
+      "probes": [
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6512175829921779,
+              0.3503930067710973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942598384932446,
+              0.3457960841023396
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6550195990130939,
+              0.3491804429863478
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6084243327775029,
+              0.3480520049497704
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6533458918366777,
+              0.35033769398586145
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6943182855183923,
+              0.3050211074476281
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6502648368775588,
+              0.34870340892253526
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942108288844691,
+              0.38774349434754224
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24664824065094973,
+              0.703437189845138
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.26239610833797544,
+              0.6974215539567172
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25120249383784843,
+              0.7005564272468597
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22184282467669747,
+              0.6968890404609982
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2508816565882074,
+              0.6982679257727843
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24971487931807929,
+              0.6804590549512062
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2500626394992259,
+              0.6988964918737088
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24789566019601816,
+              0.7181661645332361
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24942510129281437,
+              0.7521233542432378
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.2639556140280861,
+              0.7483063002601733
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2476510963048852,
+              0.7493537052415086
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22696034273680488,
+              0.7512768830424069
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25066260928219214,
+              0.752463856697782
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24563570467078635,
+              0.7289136881505907
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2523062179204951,
+              0.7488316786170225
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.25235186451123737,
+              0.7764407859910684
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7491148321445908,
+              0.200073700459003
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8004208839397949,
+              0.19689659814341023
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7497408674872796,
+              0.19535928777098352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6984690351508109,
+              0.20035338620742352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.753093386655606,
+              0.20130963341190425
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8012133364793993,
+              0.14813851852029453
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.747710537256711,
+              0.19940028754743394
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7991317679267456,
+              0.24811317956094078
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        }
+      ],
+      "planted_false_programs": 29,
+      "false_programs_rejected": 18,
+      "true_program_rejected_observations": 0,
+      "hazards": 0,
+      "per_claim": [
+        {
+          "rule": "act:B:x-",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            4,
+            5,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "rule": "act:C:y+",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "gate:A:B",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "gate:A:C",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "mode:D",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "cond:C:gain_mult:0.25",
+          "canonical_rule_true": false,
+          "new_discriminating_probe_indices": []
+        },
+        {
+          "rule": "thr:y<:C:drop:x+",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": []
+        }
+      ],
+      "limitation": "Controlled reset probes with privileged true belief. Single-observation verifier test; not exhaustive proof or an agent gain."
+    }
+  },
+  {
+    "out": "runs/vm_sim_push/factory03_wide_8542",
+    "status": "completed",
+    "simulation_not_hardware": true,
+    "note": "Privileged audit, never a new agent run or model prompt.",
+    "path_audit": {
+      "recorded_actions_recomputed": 9,
+      "hazards": 0,
+      "retained_hazards": 0,
+      "counter_matches": true,
+      "min_true_clearance": 0.12750009048616484,
+      "mode_at_segment_start": 0,
+      "no_new_actions_or_agent_outcome": true
+    },
+    "manual_truth": {
+      "precision": 1.0,
+      "coverage": 0.625,
+      "flagged": 0.375,
+      "asserted": 5,
+      "true_rules": 8,
+      "wrong": [],
+      "limitation": "Canonical rule identity; threshold location accuracy is separate, not proved by this precision."
+    },
+    "citation_support": {
+      "claims": [
+        {
+          "rule": "act:B:y-",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            3,
+            5,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "act:C:x+",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            0,
+            3,
+            5,
+            6,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "gate:A:B",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "mode:D",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            1,
+            2,
+            3,
+            5,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        }
+      ],
+      "claims_with_distinguishing_citation": 5,
+      "supported_claims_tested": 5,
+      "limitation": "Witness against a valid one-edit rival without the rule, using cited endpoints and full intervening mode history. This is not arbitrary natural-language entailment."
+    },
+    "planted_citation_attacks": {
+      "count": 15,
+      "rejected": 15,
+      "items": [
+        {
+          "sentence": "B moves the tip down. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "B moves the tip down. [rule act:B:y-; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B moves the tip down. [rule act:B:y-; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip right. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip right. [rule act:C:x+; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C moves the tip right. [rule act:C:x+; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule gate:A:B; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B only works while A is held. [rule gate:A:B; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule mode:D; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not pressing D toggles a hidden mode. [rule mode:D; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        }
+      ],
+      "limitation": "Constructed unknown-rule, false-citation and negation attacks; not arbitrary semantic entailment."
+    },
+    "citation_existence": {
+      "claimed": 40,
+      "in_recorded_range": 40,
+      "limitation": "Existence is not proof of experimental support."
+    },
+    "fresh_observation_test": {
+      "new_observations": 16,
+      "probes": [
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6512175829921779,
+              0.3503930067710973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6489257743305077,
+              0.3881113981596129
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6550195990130939,
+              0.3491804429863478
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6507396468347718,
+              0.30271794078702857
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6533458918366777,
+              0.35033769398586145
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6116281079968738,
+              0.34675517161036645
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6502648368775588,
+              0.34870340892253526
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6924131975583577,
+              0.34858501231488287
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24664824065094973,
+              0.703437189845138
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.2499046619542797,
+              0.721390395114973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25120249383784843,
+              0.7005564272468597
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24737875710400173,
+              0.6737185595412876
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.2
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2508816565882074,
+              0.6982679257727843
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.7,
+            "pos": [
+              0.24037035707401327,
+              0.7486653057906381
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.2
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2500626394992259,
+              0.6988964918737088
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.7,
+            "pos": [
+              0.2571384424597345,
+              0.7428589884938601
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24942510129281437,
+              0.7521233542432378
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.2514641676443904,
+              0.7738422326874763
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2476510963048852,
+              0.7493537052415086
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.25249627516410916,
+              0.7264857880475784
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.2
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25066260928219214,
+              0.752463856697782
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.7,
+            "pos": [
+              0.23629118242672034,
+              0.8015449733424628
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2523062179204951,
+              0.7488316786170225
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.26388918028986325,
+              0.8026142071412194
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7491148321445908,
+              0.200073700459003
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7486610574997253,
+              0.24856504710525026
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7497408674872796,
+              0.19535928777098352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7472693454752471,
+              0.14622825862214586
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.753093386655606,
+              0.20130963341190425
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7063351806892332,
+              0.19802926599146778
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.747710537256711,
+              0.19940028754743394
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7970953980745124,
+              0.20031845770990958
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        }
+      ],
+      "planted_false_programs": 29,
+      "false_programs_rejected": 19,
+      "true_program_rejected_observations": 0,
+      "hazards": 0,
+      "per_claim": [
+        {
+          "rule": "act:B:y-",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "act:C:x+",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "gate:A:B",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "mode:D",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": []
+        }
+      ],
+      "limitation": "Controlled reset probes with privileged true belief. Single-observation verifier test; not exhaustive proof or an agent gain."
+    }
+  },
+  {
+    "out": "runs/vm_sim_push/factory03_wide_8543",
+    "status": "completed",
+    "simulation_not_hardware": true,
+    "note": "Privileged audit, never a new agent run or model prompt.",
+    "path_audit": {
+      "recorded_actions_recomputed": 24,
+      "hazards": 0,
+      "retained_hazards": 0,
+      "counter_matches": true,
+      "min_true_clearance": 0.11853407657197895,
+      "mode_at_segment_start": 0,
+      "no_new_actions_or_agent_outcome": true
+    },
+    "manual_truth": {
+      "precision": 1.0,
+      "coverage": 0.625,
+      "flagged": 0.375,
+      "asserted": 5,
+      "true_rules": 8,
+      "wrong": [],
+      "limitation": "Canonical rule identity; threshold location accuracy is separate, not proved by this precision."
+    },
+    "citation_support": {
+      "claims": [
+        {
+          "rule": "act:C:x+",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            0,
+            3,
+            5,
+            6,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "gate:A:B",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "gate:A:C",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "mode:D",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "cited": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "distinguishing_experiments": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        }
+      ],
+      "claims_with_distinguishing_citation": 5,
+      "supported_claims_tested": 5,
+      "limitation": "Witness against a valid one-edit rival without the rule, using cited endpoints and full intervening mode history. This is not arbitrary natural-language entailment."
+    },
+    "planted_citation_attacks": {
+      "count": 15,
+      "rejected": 15,
+      "items": [
+        {
+          "sentence": "C moves the tip right. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip right. [rule act:C:x+; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C moves the tip right. [rule act:C:x+; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule gate:A:B; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B only works while A is held. [rule gate:A:B; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        },
+        {
+          "sentence": "C only works while A is held. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "C only works while A is held. [rule gate:A:C; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C only works while A is held. [rule gate:A:C; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule mode:D; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not pressing D toggles a hidden mode. [rule mode:D; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule unknown:false; experiments 0]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 0, 1, 2, 3, 4, 5, 6, 7]",
+          "rejected": true
+        }
+      ],
+      "limitation": "Constructed unknown-rule, false-citation and negation attacks; not arbitrary semantic entailment."
+    },
+    "citation_existence": {
+      "claimed": 40,
+      "in_recorded_range": 40,
+      "limitation": "Existence is not proof of experimental support."
+    },
+    "fresh_observation_test": {
+      "new_observations": 16,
+      "probes": [
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6512175829921779,
+              0.3503930067710973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6489257743305077,
+              0.3881113981596129
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6550195990130939,
+              0.3491804429863478
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6507396468347718,
+              0.30271794078702857
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6533458918366777,
+              0.35033769398586145
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6116281079968738,
+              0.34675517161036645
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6502648368775588,
+              0.34870340892253526
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6924131975583577,
+              0.34858501231488287
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24664824065094973,
+              0.703437189845138
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.2499046619542797,
+              0.721390395114973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25120249383784843,
+              0.7005564272468597
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24737875710400173,
+              0.6737185595412876
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.2
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2508816565882074,
+              0.6982679257727843
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.7,
+            "pos": [
+              0.24037035707401327,
+              0.7486653057906381
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.2
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2500626394992259,
+              0.6988964918737088
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.7,
+            "pos": [
+              0.2571384424597345,
+              0.7428589884938601
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24942510129281437,
+              0.7521233542432378
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.2514641676443904,
+              0.7738422326874763
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2476510963048852,
+              0.7493537052415086
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.25249627516410916,
+              0.7264857880475784
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.2
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25066260928219214,
+              0.752463856697782
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.7,
+            "pos": [
+              0.23629118242672034,
+              0.8015449733424628
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2523062179204951,
+              0.7488316786170225
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.26388918028986325,
+              0.8026142071412194
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7491148321445908,
+              0.200073700459003
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7486610574997253,
+              0.24856504710525026
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7497408674872796,
+              0.19535928777098352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7472693454752471,
+              0.14622825862214586
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.753093386655606,
+              0.20130963341190425
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7063351806892332,
+              0.19802926599146778
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.747710537256711,
+              0.19940028754743394
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7970953980745124,
+              0.20031845770990958
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        }
+      ],
+      "planted_false_programs": 29,
+      "false_programs_rejected": 19,
+      "true_program_rejected_observations": 0,
+      "hazards": 0,
+      "per_claim": [
+        {
+          "rule": "act:C:x+",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "gate:A:B",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "gate:A:C",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "mode:D",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": []
+        }
+      ],
+      "limitation": "Controlled reset probes with privileged true belief. Single-observation verifier test; not exhaustive proof or an agent gain."
+    }
+  },
+  {
+    "out": "runs/vm_sim_push/factory03_wide_8544",
+    "status": "completed",
+    "simulation_not_hardware": true,
+    "note": "Privileged audit, never a new agent run or model prompt.",
+    "path_audit": {
+      "recorded_actions_recomputed": 83,
+      "hazards": 0,
+      "retained_hazards": 0,
+      "counter_matches": true,
+      "min_true_clearance": 0.10655368546950664,
+      "mode_at_segment_start": 1,
+      "no_new_actions_or_agent_outcome": true
+    },
+    "manual_truth": {
+      "precision": 1.0,
+      "coverage": 0.625,
+      "flagged": 0.375,
+      "asserted": 5,
+      "true_rules": 8,
+      "wrong": [],
+      "limitation": "Canonical rule identity; threshold location accuracy is separate, not proved by this precision."
+    },
+    "citation_support": {
+      "claims": [
+        {
+          "rule": "act:B:x-",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            34,
+            35,
+            38,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "act:C:y+",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            34,
+            35,
+            38,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "gate:A:C",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            34,
+            35,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "mode:D",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            34,
+            35,
+            38,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "cited": [
+            34,
+            35,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42
+          ],
+          "distinguishing_experiments": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        }
+      ],
+      "claims_with_distinguishing_citation": 5,
+      "supported_claims_tested": 5,
+      "limitation": "Witness against a valid one-edit rival without the rule, using cited endpoints and full intervening mode history. This is not arbitrary natural-language entailment."
+    },
+    "planted_citation_attacks": {
+      "count": 15,
+      "rejected": 15,
+      "items": [
+        {
+          "sentence": "B moves the tip left. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "B moves the tip left. [rule act:B:x-; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B moves the tip left. [rule act:B:x-; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule act:C:y+; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C moves the tip up. [rule act:C:y+; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        },
+        {
+          "sentence": "C only works while A is held. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "C only works while A is held. [rule gate:A:C; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C only works while A is held. [rule gate:A:C; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule mode:D; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not pressing D toggles a hidden mode. [rule mode:D; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 34, 35, 37, 38, 39, 40, 41, 42]",
+          "rejected": true
+        }
+      ],
+      "limitation": "Constructed unknown-rule, false-citation and negation attacks; not arbitrary semantic entailment."
+    },
+    "citation_existence": {
+      "claimed": 40,
+      "in_recorded_range": 40,
+      "limitation": "Existence is not proof of experimental support."
+    },
+    "fresh_observation_test": {
+      "new_observations": 16,
+      "probes": [
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6512175829921779,
+              0.3503930067710973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942598384932446,
+              0.3457960841023396
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6550195990130939,
+              0.3491804429863478
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6084243327775029,
+              0.3480520049497704
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6533458918366777,
+              0.35033769398586145
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6943182855183923,
+              0.3050211074476281
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6502648368775588,
+              0.34870340892253526
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942108288844691,
+              0.38774349434754224
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24664824065094973,
+              0.703437189845138
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.26239610833797544,
+              0.6974215539567172
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25120249383784843,
+              0.7005564272468597
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22184282467669747,
+              0.6968890404609982
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2508816565882074,
+              0.6982679257727843
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24971487931807929,
+              0.6804590549512062
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2500626394992259,
+              0.6988964918737088
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24789566019601816,
+              0.7181661645332361
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24942510129281437,
+              0.7521233542432378
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.2639556140280861,
+              0.7483063002601733
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2476510963048852,
+              0.7493537052415086
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22696034273680488,
+              0.7512768830424069
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25066260928219214,
+              0.752463856697782
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24563570467078635,
+              0.7289136881505907
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2523062179204951,
+              0.7488316786170225
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.25235186451123737,
+              0.7764407859910684
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7491148321445908,
+              0.200073700459003
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8004208839397949,
+              0.19689659814341023
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7497408674872796,
+              0.19535928777098352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6984690351508109,
+              0.20035338620742352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.753093386655606,
+              0.20130963341190425
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8012133364793993,
+              0.14813851852029453
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.747710537256711,
+              0.19940028754743394
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7991317679267456,
+              0.24811317956094078
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        }
+      ],
+      "planted_false_programs": 29,
+      "false_programs_rejected": 18,
+      "true_program_rejected_observations": 0,
+      "hazards": 0,
+      "per_claim": [
+        {
+          "rule": "act:B:x-",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            4,
+            5,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "rule": "act:C:y+",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "gate:A:C",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "mode:D",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": []
+        }
+      ],
+      "limitation": "Controlled reset probes with privileged true belief. Single-observation verifier test; not exhaustive proof or an agent gain."
+    }
+  },
+  {
+    "out": "runs/vm_sim_push/factory03_wide_8545",
+    "status": "completed",
+    "simulation_not_hardware": true,
+    "note": "Privileged audit, never a new agent run or model prompt.",
+    "path_audit": {
+      "recorded_actions_recomputed": 108,
+      "hazards": 0,
+      "retained_hazards": 0,
+      "counter_matches": true,
+      "min_true_clearance": 0.12491990368827496,
+      "mode_at_segment_start": 1,
+      "no_new_actions_or_agent_outcome": true
+    },
+    "manual_truth": {
+      "precision": 1.0,
+      "coverage": 0.625,
+      "flagged": 0.375,
+      "asserted": 5,
+      "true_rules": 8,
+      "wrong": [],
+      "limitation": "Canonical rule identity; threshold location accuracy is separate, not proved by this precision."
+    },
+    "citation_support": {
+      "claims": [
+        {
+          "rule": "act:B:x-",
+          "cited": [
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "distinguishing_experiments": [
+            52,
+            53,
+            56,
+            57,
+            58,
+            59
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "act:C:y+",
+          "cited": [
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "distinguishing_experiments": [
+            52,
+            53,
+            56,
+            57,
+            58,
+            59
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "gate:A:B",
+          "cited": [
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "distinguishing_experiments": [
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "mode:D",
+          "cited": [
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "distinguishing_experiments": [
+            52,
+            53,
+            56,
+            57,
+            58,
+            59
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "cited": [
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "distinguishing_experiments": [
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        }
+      ],
+      "claims_with_distinguishing_citation": 5,
+      "supported_claims_tested": 5,
+      "limitation": "Witness against a valid one-edit rival without the rule, using cited endpoints and full intervening mode history. This is not arbitrary natural-language entailment."
+    },
+    "planted_citation_attacks": {
+      "count": 15,
+      "rejected": 15,
+      "items": [
+        {
+          "sentence": "B moves the tip left. [rule unknown:false; experiments 52]",
+          "rejected": true
+        },
+        {
+          "sentence": "B moves the tip left. [rule act:B:x-; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B moves the tip left. [rule act:B:x-; experiments 52, 53, 54, 55, 56, 57, 58, 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule unknown:false; experiments 52]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule act:C:y+; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C moves the tip up. [rule act:C:y+; experiments 52, 53, 54, 55, 56, 57, 58, 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule unknown:false; experiments 52]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule gate:A:B; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B only works while A is held. [rule gate:A:B; experiments 52, 53, 54, 55, 56, 57, 58, 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule unknown:false; experiments 52]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule mode:D; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not pressing D toggles a hidden mode. [rule mode:D; experiments 52, 53, 54, 55, 56, 57, 58, 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule unknown:false; experiments 52]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 52, 53, 54, 55, 56, 57, 58, 59]",
+          "rejected": true
+        }
+      ],
+      "limitation": "Constructed unknown-rule, false-citation and negation attacks; not arbitrary semantic entailment."
+    },
+    "citation_existence": {
+      "claimed": 40,
+      "in_recorded_range": 40,
+      "limitation": "Existence is not proof of experimental support."
+    },
+    "fresh_observation_test": {
+      "new_observations": 16,
+      "probes": [
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6512175829921779,
+              0.3503930067710973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942598384932446,
+              0.3457960841023396
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6550195990130939,
+              0.3491804429863478
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6084243327775029,
+              0.3480520049497704
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6533458918366777,
+              0.35033769398586145
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6943182855183923,
+              0.3050211074476281
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6502648368775588,
+              0.34870340892253526
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942108288844691,
+              0.38774349434754224
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24664824065094973,
+              0.703437189845138
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.26239610833797544,
+              0.6974215539567172
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25120249383784843,
+              0.7005564272468597
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22184282467669747,
+              0.6968890404609982
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2508816565882074,
+              0.6982679257727843
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24971487931807929,
+              0.6804590549512062
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2500626394992259,
+              0.6988964918737088
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24789566019601816,
+              0.7181661645332361
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24942510129281437,
+              0.7521233542432378
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.2639556140280861,
+              0.7483063002601733
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2476510963048852,
+              0.7493537052415086
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22696034273680488,
+              0.7512768830424069
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25066260928219214,
+              0.752463856697782
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24563570467078635,
+              0.7289136881505907
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2523062179204951,
+              0.7488316786170225
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.25235186451123737,
+              0.7764407859910684
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7491148321445908,
+              0.200073700459003
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8004208839397949,
+              0.19689659814341023
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7497408674872796,
+              0.19535928777098352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6984690351508109,
+              0.20035338620742352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.753093386655606,
+              0.20130963341190425
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8012133364793993,
+              0.14813851852029453
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.747710537256711,
+              0.19940028754743394
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7991317679267456,
+              0.24811317956094078
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        }
+      ],
+      "planted_false_programs": 29,
+      "false_programs_rejected": 18,
+      "true_program_rejected_observations": 0,
+      "hazards": 0,
+      "per_claim": [
+        {
+          "rule": "act:B:x-",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            4,
+            5,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "rule": "act:C:y+",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "gate:A:B",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "mode:D",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": []
+        }
+      ],
+      "limitation": "Controlled reset probes with privileged true belief. Single-observation verifier test; not exhaustive proof or an agent gain."
+    }
+  },
+  {
+    "out": "runs/vm_sim_push/factory03_wide_8546",
+    "status": "completed",
+    "simulation_not_hardware": true,
+    "note": "Privileged audit, never a new agent run or model prompt.",
+    "path_audit": {
+      "recorded_actions_recomputed": 116,
+      "hazards": 0,
+      "retained_hazards": 0,
+      "counter_matches": true,
+      "min_true_clearance": 0.12500000000002423,
+      "mode_at_segment_start": 1,
+      "no_new_actions_or_agent_outcome": true
+    },
+    "manual_truth": {
+      "precision": 1.0,
+      "coverage": 0.5,
+      "flagged": 0.5,
+      "asserted": 4,
+      "true_rules": 8,
+      "wrong": [],
+      "limitation": "Canonical rule identity; threshold location accuracy is separate, not proved by this precision."
+    },
+    "citation_support": {
+      "claims": [
+        {
+          "rule": "act:B:x-",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            59,
+            60,
+            62,
+            63,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "act:C:y+",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            59,
+            60,
+            62,
+            63,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "mode:D",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [
+            59,
+            60,
+            62,
+            63,
+            66
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "cited": [
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "distinguishing_experiments": [],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        }
+      ],
+      "claims_with_distinguishing_citation": 3,
+      "supported_claims_tested": 4,
+      "limitation": "Witness against a valid one-edit rival without the rule, using cited endpoints and full intervening mode history. This is not arbitrary natural-language entailment."
+    },
+    "planted_citation_attacks": {
+      "count": 12,
+      "rejected": 12,
+      "items": [
+        {
+          "sentence": "B moves the tip left. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "B moves the tip left. [rule act:B:x-; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B moves the tip left. [rule act:B:x-; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule act:C:y+; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C moves the tip up. [rule act:C:y+; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule mode:D; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not pressing D toggles a hidden mode. [rule mode:D; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule unknown:false; experiments 59]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 59, 60, 61, 62, 63, 64, 65, 66]",
+          "rejected": true
+        }
+      ],
+      "limitation": "Constructed unknown-rule, false-citation and negation attacks; not arbitrary semantic entailment."
+    },
+    "citation_existence": {
+      "claimed": 32,
+      "in_recorded_range": 32,
+      "limitation": "Existence is not proof of experimental support."
+    },
+    "fresh_observation_test": {
+      "new_observations": 16,
+      "probes": [
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6512175829921779,
+              0.3503930067710973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942598384932446,
+              0.3457960841023396
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6550195990130939,
+              0.3491804429863478
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6084243327775029,
+              0.3480520049497704
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6533458918366777,
+              0.35033769398586145
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6943182855183923,
+              0.3050211074476281
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6502648368775588,
+              0.34870340892253526
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942108288844691,
+              0.38774349434754224
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24664824065094973,
+              0.703437189845138
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.26239610833797544,
+              0.6974215539567172
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25120249383784843,
+              0.7005564272468597
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22184282467669747,
+              0.6968890404609982
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2508816565882074,
+              0.6982679257727843
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24971487931807929,
+              0.6804590549512062
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2500626394992259,
+              0.6988964918737088
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24789566019601816,
+              0.7181661645332361
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24942510129281437,
+              0.7521233542432378
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.2639556140280861,
+              0.7483063002601733
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2476510963048852,
+              0.7493537052415086
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22696034273680488,
+              0.7512768830424069
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25066260928219214,
+              0.752463856697782
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24563570467078635,
+              0.7289136881505907
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2523062179204951,
+              0.7488316786170225
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.25235186451123737,
+              0.7764407859910684
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7491148321445908,
+              0.200073700459003
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8004208839397949,
+              0.19689659814341023
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7497408674872796,
+              0.19535928777098352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6984690351508109,
+              0.20035338620742352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.753093386655606,
+              0.20130963341190425
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8012133364793993,
+              0.14813851852029453
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.747710537256711,
+              0.19940028754743394
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7991317679267456,
+              0.24811317956094078
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        }
+      ],
+      "planted_false_programs": 29,
+      "false_programs_rejected": 18,
+      "true_program_rejected_observations": 0,
+      "hazards": 0,
+      "per_claim": [
+        {
+          "rule": "act:B:x-",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            4,
+            5,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "rule": "act:C:y+",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "mode:D",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": []
+        }
+      ],
+      "limitation": "Controlled reset probes with privileged true belief. Single-observation verifier test; not exhaustive proof or an agent gain."
+    }
+  },
+  {
+    "out": "runs/vm_sim_push/factory03_wide_8547",
+    "status": "completed",
+    "simulation_not_hardware": true,
+    "note": "Privileged audit, never a new agent run or model prompt.",
+    "path_audit": {
+      "recorded_actions_recomputed": 87,
+      "hazards": 0,
+      "retained_hazards": 0,
+      "counter_matches": true,
+      "min_true_clearance": 0.12548989993122797,
+      "mode_at_segment_start": 1,
+      "no_new_actions_or_agent_outcome": true
+    },
+    "manual_truth": {
+      "precision": 1.0,
+      "coverage": 0.75,
+      "flagged": 0.125,
+      "asserted": 6,
+      "true_rules": 8,
+      "wrong": [],
+      "limitation": "Canonical rule identity; threshold location accuracy is separate, not proved by this precision."
+    },
+    "citation_support": {
+      "claims": [
+        {
+          "rule": "act:B:x-",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            34,
+            35,
+            38,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "act:C:y+",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            34,
+            35,
+            36,
+            38,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "gate:A:B",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            34,
+            35,
+            36,
+            38,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "gate:A:C",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            34,
+            35,
+            36,
+            38,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "mode:D",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            34,
+            35,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "cited": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "distinguishing_experiments": [
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "canonical_rule_true": true,
+          "all_citations_exist_in_segment": true
+        }
+      ],
+      "claims_with_distinguishing_citation": 6,
+      "supported_claims_tested": 6,
+      "limitation": "Witness against a valid one-edit rival without the rule, using cited endpoints and full intervening mode history. This is not arbitrary natural-language entailment."
+    },
+    "planted_citation_attacks": {
+      "count": 18,
+      "rejected": 18,
+      "items": [
+        {
+          "sentence": "B moves the tip left. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "B moves the tip left. [rule act:B:x-; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B moves the tip left. [rule act:B:x-; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "C moves the tip up. [rule act:C:y+; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C moves the tip up. [rule act:C:y+; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "B only works while A is held. [rule gate:A:B; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not B only works while A is held. [rule gate:A:B; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        },
+        {
+          "sentence": "C only works while A is held. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "C only works while A is held. [rule gate:A:C; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not C only works while A is held. [rule gate:A:C; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "pressing D toggles a hidden mode. [rule mode:D; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not pressing D toggles a hidden mode. [rule mode:D; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule unknown:false; experiments 34]",
+          "rejected": true
+        },
+        {
+          "sentence": "the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 999999]",
+          "rejected": true
+        },
+        {
+          "sentence": "Not the panel light (light_1) is on in the mode entered by pressing D once. [rule ind:light_1:mode; experiments 34, 35, 36, 37, 38, 39, 40, 41]",
+          "rejected": true
+        }
+      ],
+      "limitation": "Constructed unknown-rule, false-citation and negation attacks; not arbitrary semantic entailment."
+    },
+    "citation_existence": {
+      "claimed": 48,
+      "in_recorded_range": 48,
+      "limitation": "Existence is not proof of experimental support."
+    },
+    "fresh_observation_test": {
+      "new_observations": 16,
+      "probes": [
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6512175829921779,
+              0.3503930067710973
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942598384932446,
+              0.3457960841023396
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6550195990130939,
+              0.3491804429863478
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6084243327775029,
+              0.3480520049497704
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6533458918366777,
+              0.35033769398586145
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6943182855183923,
+              0.3050211074476281
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.6514683045111453,
+            0.34853169548885454
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.6502648368775588,
+              0.34870340892253526
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6942108288844691,
+              0.38774349434754224
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24664824065094973,
+              0.703437189845138
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.26239610833797544,
+              0.6974215539567172
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25120249383784843,
+              0.7005564272468597
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22184282467669747,
+              0.6968890404609982
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2508816565882074,
+              0.6982679257727843
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24971487931807929,
+              0.6804590549512062
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.7
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2500626394992259,
+              0.6988964918737088
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24789566019601816,
+              0.7181661645332361
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.25
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.24942510129281437,
+              0.7521233542432378
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 0.75,
+            "pos": [
+              0.2639556140280861,
+              0.7483063002601733
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2476510963048852,
+              0.7493537052415086
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.22696034273680488,
+              0.7512768830424069
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.25066260928219214,
+              0.752463856697782
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.24563570467078635,
+              0.7289136881505907
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.25,
+            0.75
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 0.5
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.2523062179204951,
+              0.7488316786170225
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.0,
+            "pos": [
+              0.25235186451123737,
+              0.7764407859910684
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": -1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7491148321445908,
+              0.200073700459003
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8004208839397949,
+              0.19689659814341023
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 1.0,
+              "C": 0.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.7497408674872796,
+              0.19535928777098352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.6984690351508109,
+              0.20035338620742352
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": -1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.753093386655606,
+              0.20130963341190425
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.8012133364793993,
+              0.14813851852029453
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        },
+        {
+          "reset_pose": [
+            0.75,
+            0.2
+          ],
+          "action": {
+            "channels": {
+              "A": 1.0,
+              "B": 0.0,
+              "C": 1.0,
+              "D": 0.0
+            },
+            "duration": 1.0
+          },
+          "before": {
+            "t": 0.0,
+            "pos": [
+              0.747710537256711,
+              0.19940028754743394
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "after": {
+            "t": 1.5,
+            "pos": [
+              0.7991317679267456,
+              0.24811317956094078
+            ],
+            "sigma": 0.002,
+            "confidence": 1.0,
+            "frame": null,
+            "extras": {
+              "light_1": 0.0
+            }
+          },
+          "hazards": 0
+        }
+      ],
+      "planted_false_programs": 29,
+      "false_programs_rejected": 18,
+      "true_program_rejected_observations": 0,
+      "hazards": 0,
+      "per_claim": [
+        {
+          "rule": "act:B:x-",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            4,
+            5,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "rule": "act:C:y+",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "gate:A:B",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "gate:A:C",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "mode:D",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "rule": "ind:light_1:mode",
+          "canonical_rule_true": true,
+          "new_discriminating_probe_indices": []
+        }
+      ],
+      "limitation": "Controlled reset probes with privileged true belief. Single-observation verifier test; not exhaustive proof or an agent gain."
+    }
+  }
+]

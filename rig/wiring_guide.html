@@ -1,0 +1,418 @@
+<title>NoManual Wiring Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a bench sheet read top to bottom, one wiring stage at a time, each with its own diagram. */
+:root {
+  --bg: #f3f5f2; --panel: #ffffff; --fg: #1b2420; --muted: #5d6a63; --line: #d3dad5; --pcb: #e4ece6;
+  --red: #c8281e; --gnd: #1b2420; --sig: #d9690b; --dip: #2467b8; --led: #a97b00; --warn-bg: #fdeee9; --warn: #a3281b; --ok: #1d7a4c;
+  --display: "Archivo", "Arial Narrow", Arial, sans-serif; --body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif; --mono: "IBM Plex Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121815; --panel: #1b2320; --fg: #e8eee9; --muted: #9aa8a0; --line: #36423c; --pcb: #24302a;
+  --red: #ff6a5c; --gnd: #e8eee9; --sig: #ff9a3d; --dip: #69a8f5; --led: #e6bd3a; --warn-bg: #3a1f1a; --warn: #ffa597; --ok: #58cf94; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121815; --panel: #1b2320; --fg: #e8eee9; --muted: #9aa8a0; --line: #36423c; --pcb: #24302a;
+  --red: #ff6a5c; --gnd: #e8eee9; --sig: #ff9a3d; --dip: #69a8f5; --led: #e6bd3a; --warn-bg: #3a1f1a; --warn: #ffa597; --ok: #58cf94; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 36px; }
+.wrap > * { min-width: 0; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.15; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(30px, 7vw, 44px); font-weight: 800; }
+h2 { font-size: 24px; font-weight: 700; }
+h3 { font-size: 16px; font-weight: 700; }
+p { margin: 0; }
+section { display: grid; gap: 14px; }
+section > * { min-width: 0; }
+.head { display: grid; gap: 8px; }
+.lede { color: var(--muted); max-width: 62ch; }
+.stage-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; border-top: 2px solid var(--fg); padding-top: 12px; }
+.time { font: 13px var(--mono); color: var(--muted); }
+ul, ol { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+code { font: 0.92em var(--mono); background: var(--pcb); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere; }
+.scroll { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+.scroll svg { display: block; width: 100%; height: auto; }
+.scroll.full svg { min-width: 820px; }
+.scroll.crop svg { min-width: 560px; }
+figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
+figure { margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th { text-align: left; font: 600 12px var(--mono); letter-spacing: .04em; color: var(--muted); }
+th, td { padding: 7px 10px 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+td { overflow-wrap: anywhere; }
+.tablewrap { overflow-x: auto; }
+.tablewrap table { min-width: 460px; }
+.warn { background: var(--warn-bg); color: var(--fg); padding: 12px 14px; border-radius: 6px; display: grid; gap: 6px; }
+.warn h3 { color: var(--warn); }
+.checks { list-style: none; padding: 0; }
+.checks label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+.checks input { margin-top: 5px; width: 17px; height: 17px; flex: none; accent-color: var(--ok); }
+.checks span { min-width: 0; }
+.pass { color: var(--ok); font-weight: 600; }
+.cmd { display: flex; gap: 8px; align-items: stretch; background: var(--pcb); border-radius: 5px; padding: 8px 8px 8px 12px; }
+.cmd pre { margin: 0; flex: 1; min-width: 0; overflow-x: auto; font: 13px/1.5 var(--mono); align-self: center; }
+.cmd button { flex: none; font: 600 12px var(--mono); padding: 4px 10px; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.cmd button:focus-visible, .checks input:focus-visible { outline: 2px solid var(--dip); outline-offset: 2px; }
+.key { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--muted); }
+.key i { display: inline-block; width: 18px; height: 3px; margin-right: 6px; vertical-align: middle; }
+/* diagram */
+svg text { font-family: var(--body); fill: var(--fg); font-size: 13px; }
+svg .t { font-weight: 600; }
+svg .s { font-size: 11px; fill: var(--muted); }
+svg .pin { font: 11px var(--mono); fill: var(--muted); }
+svg .pin.on { fill: var(--fg); font-weight: 600; }
+svg .box { fill: var(--panel); stroke: var(--fg); stroke-width: 1.5; }
+svg .bd { fill: var(--pcb); stroke: var(--fg); stroke-width: 1.5; }
+svg .wago { fill: var(--pcb); stroke: var(--fg); stroke-width: 1.5; }
+svg .sl { stroke: var(--muted); stroke-width: 1; }
+svg .bread { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 5 4; }
+svg .w { fill: none; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+svg .r { stroke: var(--red); } svg .k { stroke: var(--gnd); } svg .o { stroke: var(--sig); } svg .b { stroke: var(--dip); } svg .l { stroke: var(--led); } svg .g { stroke: var(--muted); }
+svg .dot { fill: var(--gnd); }
+svg .hole { fill: var(--muted); } svg .hole.on { fill: var(--sig); }
+svg .ledf { fill: var(--led); stroke: var(--fg); stroke-width: 1.2; }
+svg .capb { fill: var(--muted); }
+svg .dimmed { opacity: .13; }
+</style>
+
+<div class="wrap">
+  <header class="head">
+    <h1>NoManual wiring guide</h1>
+    <p class="lede">Everything to connect in your 5-hour gap, in order. Finish each stage's test before starting the next, so a fault can only be in what you just added.</p>
+  </header>
+
+  <section class="warn" aria-label="Rules">
+    <h3>Five rules that protect the parts</h3>
+    <ol>
+      <li><strong>Change wires only with the adapter unplugged and USB out.</strong></li>
+      <li><strong>Never connect the 5V rail to any ESP32 pin,</strong> including 5V and VIN. The ESP32 gets power from USB only.</li>
+      <li><strong>Check the capacitor's direction.</strong> The side with the stripe is negative. Backwards, it can burst.</li>
+      <li><strong>Keep the laser out of eyes.</strong> Aim it down into a box or at the table, and never at a person or a shiny surface. You're in a shared space, so keep it off unless you're testing it.</li>
+      <li><strong>Keep the ESP32 off metal,</strong> so nothing shorts its pins from below. Keep one hand near the rocker switch whenever the servos have power.</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>The whole circuit</h2></div>
+    <figure>
+      <div class="scroll full" id="master-wrap">
+        <svg id="master" viewBox="0 0 1000 610" role="img" aria-label="Full wiring diagram: 5 volt adapter through fuse and rocker switch to the positive rail, servos, capacitor and laser between the positive and negative rails, servo signals to GPIO 18 and 19, LED on GPIO 23, DIP switches on GPIO 32, 33, 25 and 26, and all grounds joined.">
+          <g class="p-power">
+            <rect class="box" x="40" y="10" width="120" height="30"/><text class="t" x="100" y="30" text-anchor="middle">5V 3A adapter</text>
+            <path class="w g" d="M100 40V60"/>
+            <rect class="box" x="40" y="60" width="120" height="50"/><text class="t" x="100" y="81" text-anchor="middle">DC plug</text><text class="s" x="100" y="97" text-anchor="middle">screw terminals</text>
+            <text class="pin on" x="150" y="73" text-anchor="end">+</text><text class="pin on" x="50" y="100">−</text>
+            <path class="w r" d="M160 75H210"/>
+            <rect class="box" x="210" y="55" width="100" height="40"/><text class="t" x="260" y="73" text-anchor="middle">Fuse holder</text><text class="s" x="260" y="87" text-anchor="middle">3A T5x20</text>
+            <path class="w r" d="M310 75H350"/>
+            <rect class="wago" x="350" y="55" width="60" height="40"/><text class="s" x="380" y="72" text-anchor="middle">3-pin</text><text class="s" x="380" y="86" text-anchor="middle">WAGO A</text>
+            <path class="w r" d="M410 75H450"/>
+            <rect class="box" x="450" y="50" width="100" height="50"/><text class="t" x="500" y="72" text-anchor="middle">Rocker switch</text><text class="s" x="500" y="87" text-anchor="middle">your power cut-off</text>
+            <path class="w r" d="M550 75H600"/>
+            <text class="t" x="600" y="36">+5V rail (5-pin WAGO)</text>
+            <rect class="wago" x="600" y="45" width="380" height="60"/>
+            <path class="sl" d="M676 45V105M752 45V105M828 45V105M904 45V105"/>
+            <text class="s" x="638" y="79" text-anchor="middle">from switch</text>
+            <text class="s" x="714" y="79" text-anchor="middle">pan red</text>
+            <text class="s" x="790" y="79" text-anchor="middle">tilt red</text>
+            <text class="s" x="866" y="79" text-anchor="middle">cap +</text>
+            <text class="s" x="942" y="79" text-anchor="middle">laser +</text>
+            <path class="w k" d="M40 95H18V565H560"/>
+            <text class="t" x="592" y="466" text-anchor="end">GND rail</text>
+            <text class="s" x="592" y="481" text-anchor="end">5-pin WAGO</text>
+            <rect class="wago" x="600" y="440" width="380" height="60"/>
+            <path class="sl" d="M676 440V500M752 440V500M828 440V500M904 440V500"/>
+            <text class="s" x="638" y="474" text-anchor="middle">link</text>
+            <text class="s" x="714" y="474" text-anchor="middle">pan brown</text>
+            <text class="s" x="790" y="474" text-anchor="middle">tilt brown</text>
+            <text class="s" x="866" y="474" text-anchor="middle">cap −</text>
+            <text class="s" x="942" y="474" text-anchor="middle">laser −</text>
+            <path class="w k" d="M638 500V540"/>
+            <rect class="wago" x="560" y="540" width="170" height="50"/>
+            <path class="sl" d="M617 540V590M673 540V590"/>
+            <text class="s" x="588" y="561" text-anchor="middle">DC −</text>
+            <text class="s" x="645" y="569" text-anchor="middle">link</text>
+            <text class="s" x="701" y="561" text-anchor="middle">ESP32</text><text class="s" x="701" y="575" text-anchor="middle">GND</text>
+            <text class="s" x="645" y="604" text-anchor="middle">3-pin WAGO B</text>
+          </g>
+          <g class="p-cap">
+            <path class="w r" d="M866 105V240"/>
+            <rect class="box" x="838" y="240" width="56" height="60"/>
+            <rect class="capb" x="838" y="290" width="56" height="10"/>
+            <text class="s" x="866" y="258" text-anchor="middle">1000µF</text><text class="s" x="866" y="272" text-anchor="middle">capacitor</text><text class="s" x="866" y="285" text-anchor="middle">stripe −</text>
+            <path class="w k" d="M866 300V440"/>
+          </g>
+          <g class="p-servo">
+            <rect class="box" x="682" y="230" width="64" height="70"/><text class="t" x="714" y="260" text-anchor="middle">Pan</text><text class="s" x="714" y="276" text-anchor="middle">servo</text>
+            <rect class="box" x="758" y="230" width="64" height="70"/><text class="t" x="790" y="260" text-anchor="middle">Tilt</text><text class="s" x="790" y="276" text-anchor="middle">servo</text>
+            <path class="w r" d="M714 105V230M790 105V230"/>
+            <path class="w k" d="M714 300V440M790 300V440"/>
+            <path class="w o" d="M682 265H600V298H460"/>
+            <path class="w o" d="M770 230V200H722A8 8 0 0 0 706 200H560V282H460"/>
+            <text class="s" x="610" y="258">pan signal</text>
+            <text class="s" x="572" y="193">tilt signal</text>
+            <text class="s" x="472" y="316">orange wires go through</text><text class="s" x="472" y="330">the breadboard, for Demo C</text>
+          </g>
+          <g class="p-laser">
+            <path class="w r" d="M942 105V230"/>
+            <rect class="box" x="910" y="230" width="64" height="70"/><text class="t" x="942" y="260" text-anchor="middle">Laser</text><text class="s" x="942" y="276" text-anchor="middle">S to +</text>
+            <path class="w k" d="M942 300V440"/>
+          </g>
+          <g class="p-esp">
+            <rect class="bd" x="300" y="150" width="160" height="320" rx="4"/>
+            <text class="t" x="380" y="145" text-anchor="middle">ESP32 (38-pin)</text>
+            <path class="w g" d="M380 470V488"/><text class="s" x="390" y="487">USB to laptop</text>
+            <g id="pins"></g>
+          </g>
+          <g class="p-dip">
+            <rect class="bread" x="55" y="225" width="205" height="175"/>
+            <text class="s" x="62" y="218">breadboard</text>
+            <rect class="box" x="130" y="255" width="84" height="74"/>
+            <text class="t" x="172" y="344" text-anchor="middle">DIP switch</text>
+            <text class="pin on" x="172" y="270" text-anchor="middle">1</text><text class="pin on" x="172" y="286" text-anchor="middle">2</text><text class="pin on" x="172" y="302" text-anchor="middle">3</text><text class="pin on" x="172" y="318" text-anchor="middle">4</text>
+            <path class="w b" d="M214 266H300M214 282H300M214 298H300M214 314H300"/>
+            <path class="w k" d="M130 266H90M130 282H90M130 298H90M130 314H90M90 266V378H300"/>
+          </g>
+          <g class="p-gndlink">
+            <circle class="dot" cx="230" cy="378" r="4"/>
+            <path class="w k" d="M230 378V510H701V540"/>
+            <text class="s" x="240" y="503">ground link to WAGO B</text>
+          </g>
+          <g class="p-led">
+            <path class="w l" d="M460 186H486"/>
+            <rect class="box" x="486" y="177" width="36" height="18"/><text class="s" x="504" y="190" text-anchor="middle">330Ω</text>
+            <path class="w l" d="M522 186H532"/>
+            <circle class="ledf" cx="540" cy="186" r="8"/>
+            <text class="s" x="552" y="178">LED</text>
+            <path class="w k" d="M540 178V158H476V170H460"/>
+            <text class="s" x="476" y="152">short leg to GND</text>
+          </g>
+        </svg>
+      </div>
+      <figcaption>Pin order is the usual 38-pin layout. Your board's printed labels win if they differ. Swipe sideways on a phone.</figcaption>
+    </figure>
+    <div class="key">
+      <span><i style="background:var(--red)"></i>+5V</span>
+      <span><i style="background:var(--gnd)"></i>ground</span>
+      <span><i style="background:var(--sig)"></i>servo signal</span>
+      <span><i style="background:var(--dip)"></i>DIP</span>
+      <span><i style="background:var(--led)"></i>LED</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>Before you start</h2></div>
+    <h3>Pack tonight</h3>
+    <ul class="checks">
+      <li><label><input type="checkbox" id="p1"><span>Laptop and charger, plus a socket for the adapter when you get there</span></label></li>
+      <li><label><input type="checkbox" id="p2"><span>ESP32, USB cable, breadboard, jumpers, 2 servos and the spare, servo extensions</span></label></li>
+      <li><label><input type="checkbox" id="p3"><span>Pan-tilt bracket, laser modules, LED, 330Ω resistors, DIP switch, capacitor</span></label></li>
+      <li><label><input type="checkbox" id="p4"><span>Adapter, DC plug, fuse holder, fuses, rocker switch, WAGOs, multimeter</span></label></li>
+      <li><label><input type="checkbox" id="p5"><span>Red and black wire, tape, tie wraps, scissors</span></label></li>
+      <li><label><input type="checkbox" id="p6"><span><strong>Small screwdriver, flat and Phillips.</strong> Get one on the way, or borrow one from a uni lab or a friend. See below if you can't.</span></label></li>
+      <li><label><input type="checkbox" id="p7"><span>An empty box or thick cardboard to aim the laser into</span></label></li>
+    </ul>
+    <h3>If you can't get a screwdriver</h3>
+    <p>The DC plug's screw terminals and the bracket both need one, so no servo or laser can get power. You can still do most of the wiring:</p>
+    <ul>
+      <li>Do all of stage 1.</li>
+      <li>Do stage 2's parts test, then wire everything except the two wires into the DC plug. Skip the 5 V test.</li>
+      <li>In stage 3, connect the capacitor, the servo wires and the ground link. Skip the test.</li>
+      <li>In stage 5, connect the laser's wires only if you've read its pin labels. Don't mount it.</li>
+    </ul>
+    <p>Then, at home with a screwdriver, connect the DC plug and run the tests from stage 2 onward. Stop and do the 5 V test before anything else gets power.</p>
+    <p>Foam, cardboard, paper, ruler and glue aren't needed for this session.</p>
+    <h3>Open a terminal on the laptop</h3>
+    <div class="cmd"><pre>cd C:\Users\pc\Documents\_PersonalProjects\nomanual-meta</pre><button type="button">Copy</button></div>
+    <p>The board was on <code>COM4</code> yesterday. If a command can't open it, check <strong>Ports (COM &amp; LPT)</strong> in Device Manager and use that number instead.</p>
+    <p>The commands below haven't run on your board yet, apart from flashing. If one fails, send me the output. That's a software problem and doesn't mean your wiring is wrong.</p>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>Stage 1: LED and DIP switch</h2><span class="time">about 45 min, USB out</span></div>
+    <figure><div class="scroll crop"><svg data-show="esp dip led" data-view="40 130 580 365"></svg></div></figure>
+    <div class="tablewrap"><table>
+      <tr><th>From</th><th>To</th></tr>
+      <tr><td>GPIO 23</td><td>330Ω resistor</td></tr>
+      <tr><td>Other end of the resistor</td><td>LED long leg</td></tr>
+      <tr><td>LED short leg</td><td>GND pin next to GPIO 23</td></tr>
+      <tr><td>GPIO 32, 33, 25, 26</td><td>DIP switches 1, 2, 3, 4</td></tr>
+      <tr><td>Other side of all 4 switches</td><td>One breadboard row or rail, then to a GND pin</td></tr>
+    </table></div>
+    <ul>
+      <li>Leave the ESP32 off the breadboard and use male-to-female jumpers on its pins. It's too wide to leave free holes.</li>
+      <li>Set the DIP switch across the breadboard's centre gap.</li>
+      <li>Your breadboard's side rails are split in the middle. Keep a ground rail on one half, or bridge the two halves with a jumper.</li>
+    </ul>
+    <h3>Test it</h3>
+    <p>Set all switches OFF and plug in USB. <span class="pass">Pass: the LED blinks about once a second.</span></p>
+    <p>Then, for each row below, set the switches, press the board's <strong>EN</strong> button, and run this. Read the <code>connected:</code> line it prints, then type <code>q</code> to close it before the next row.</p>
+    <div class="cmd"><pre>.venv\Scripts\python scripts\rig_console.py --port COM4</pre><button type="button">Copy</button></div>
+    <div class="tablewrap"><table>
+      <tr><th>Switches ON</th><th>Expect</th></tr>
+      <tr><td>None</td><td><code>draw=0 mode=calib</code></td></tr>
+      <tr><td>1 only</td><td><code>draw=1 mode=run</code></td></tr>
+      <tr><td>2 only</td><td><code>draw=2 mode=run</code></td></tr>
+      <tr><td>3 only</td><td><code>draw=4 mode=run</code></td></tr>
+      <tr><td>4 only</td><td><code>draw=8 mode=run</code></td></tr>
+      <tr><td>1 and 4</td><td>Skip the console: after pressing EN, the LED blinks fast. That's draw 9, which doesn't exist, so it should refuse to run.</td></tr>
+    </table></div>
+    <p>Set all switches back to OFF afterwards.</p>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>Stage 2: power wiring</h2><span class="time">about 1 hour, adapter unplugged</span></div>
+    <figure><div class="scroll full"><svg data-show="power" data-view="0 0 1000 610"></svg></div></figure>
+    <ol>
+      <li><strong>Test the parts first.</strong> Set the meter to the beep symbol. The fuse should beep or read near 0. The switch should beep when ON and show <code>1</code> when OFF.</li>
+      <li>Fit the fuse in its holder.</li>
+      <li><strong>Positive path, red wire:</strong> DC plug <code>+</code> → fuse holder → WAGO A → rocker switch → +5V rail.</li>
+      <li><strong>Negative path, black wire:</strong> DC plug <code>−</code> → WAGO B. Then a short black link from WAGO B to the GND rail.</li>
+      <li>Tug every wire. Strip about 1 cm for each WAGO, and tape any bare metal on the switch.</li>
+    </ol>
+    <p>WAGO A joins the fuse holder's lead to the switch's lead. If your wires already reach each other, soldered or otherwise, you can skip it.</p>
+    <h3>Test it</h3>
+    <ol>
+      <li>Switch OFF. Put the meter on <strong>20 in the DCV section</strong>: black probe in COM, red in VΩmA.</li>
+      <li>Plug in the adapter and turn the switch ON. Measure with red on +5V rail, black on GND rail, using the WAGO test holes or bare wire.</li>
+    </ol>
+    <p><span class="pass">Pass: 4.8 to 5.3 V with the switch ON, and 0 V with it OFF.</span></p>
+    <p>A reading near −5 V means the wires are swapped at the DC plug. A reading of 0 V with the switch ON means a loose wire or a blown fuse. Unplug before fixing either.</p>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>Stage 3: capacitor and bare servos</h2><span class="time">about 45 min</span></div>
+    <figure><div class="scroll crop"><svg data-show="esp cap servo power gndlink" data-view="220 20 780 590"></svg></div></figure>
+    <ol>
+      <li><strong>Everything unplugged.</strong> Fit the capacitor: stripe side to the GND rail, other side to the +5V rail. Recheck 5 V as in stage 2, then unplug again.</li>
+      <li>Don't fit the servos to the bracket or attach the servo arms yet.</li>
+      <li>Plug each servo into a servo extension. Push 3 male-to-male jumpers into the extension's far end.</li>
+      <li>Brown → GND rail. Red → +5V rail. Tug each one, because jumper pins can slip out of a WAGO.</li>
+      <li>Orange → its own breadboard row, then a male-to-female jumper from that row to the ESP32: pan to <strong>GPIO 18</strong>, tilt to <strong>GPIO 19</strong>. Swapping these two later is how Demo C works.</li>
+      <li><strong>Connect ground:</strong> a wire from your breadboard ground to WAGO B. Without this, the servos jitter or ignore commands.</li>
+      <li>Leave slack in the tilt servo's wires, because that servo rides on top of the pan servo.</li>
+    </ol>
+    <h3>Test it</h3>
+    <p>All DIP switches OFF, USB in, adapter in, then rocker switch ON with your hand on it. Each servo may jump once as power comes on, because it snaps to the middle. That's normal with no bracket fitted. Run the console, then type these one at a time:</p>
+    <div class="cmd"><pre>.venv\Scripts\python scripts\rig_console.py --port COM4</pre><button type="button">Copy</button></div>
+    <div class="cmd"><pre>j 0.5 0.5
+j 0.6 0.5
+j 0.5 0.6
+j 0.5 0.5</pre><button type="button">Copy</button></div>
+    <p><span class="pass">Pass: the first move changes nothing or barely moves, <code>0.6 0.5</code> turns only the pan servo, and <code>0.5 0.6</code> turns only the tilt servo, all slowly.</span> If they're swapped, swap the two orange wires. Stay on <code>j 0.5 0.5</code> for the next stage.</p>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>Stage 4: build the bracket</h2><span class="time">about 45 min, servos centred</span></div>
+    <ol>
+      <li>With the servos at <code>j 0.5 0.5</code>, turn the rocker switch OFF. Don't turn the shafts by hand from here on.</li>
+      <li>Follow the bracket's own assembly order. Fit each servo arm so that the bracket sits at the <strong>middle of its travel</strong>, with the top plate level and facing forward.</li>
+      <li>Check that each joint can swing freely about 45° each way. If an arm is off centre, take it off and refit it one spline over.</li>
+      <li>Tighten the screws until snug, without forcing them into the plastic.</li>
+      <li>Tie-wrap or tape the bracket's base to something heavy, such as a book or a box. The pan motion will otherwise rock it.</li>
+    </ol>
+    <h3>Test it</h3>
+    <p>Rocker ON, hand on it. This runs the first-power checks and asks you y/n questions. Close the console first (<code>q</code>), since only one program can use the port.</p>
+    <div class="cmd"><pre>.venv\Scripts\python scripts\rig_bringup.py calib --port COM4</pre><button type="button">Copy</button></div>
+    <ul>
+      <li><strong>"Did both servos move?"</strong> They're already at the middle, so they may not move. Answer <code>y</code> if nothing jerked.</li>
+      <li><strong>"Which way did the tip move?"</strong> There's no tip yet, so type how the top plate moved: <code>left</code>, <code>right</code>, <code>up</code> or <code>down</code>. It asks once for each servo. Note both answers.</li>
+      <li><strong>The corners question</strong> also mentions the board and camera, which you don't have yet. Answer on buzzing only. We'll redo that part on the real board.</li>
+    </ul>
+    <p><span class="pass">Pass: it prints <code>ALL PASS</code>.</span> <strong>If a servo buzzes against a stop, turn the rocker OFF at once.</strong> That means an arm needs refitting. It's safe to run again afterwards.</p>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>Stage 5: laser</h2><span class="time">about 20 min, rocker OFF</span></div>
+    <figure><div class="scroll crop"><svg data-show="power laser" data-view="590 20 410 490" style="min-width:0;max-width:440px;margin:0 auto"></svg></div></figure>
+    <ol>
+      <li><strong>Check the module's pins.</strong> It usually has <code>S</code>, a middle pin and <code>−</code>. Connect <code>S</code> → +5V rail and <code>−</code> → GND rail, leaving the middle pin empty. If it has two bare wires, red goes to + and black to −.</li>
+      <li>Aim it down into your box before powering it.</li>
+      <li>Rocker ON. <span class="pass">Pass: a red dot appears on the box.</span> If nothing happens, turn it OFF, recheck the pins, and send me a photo of the module's labels. Don't guess at other pin combinations.</li>
+      <li>Turn the lens gently to get a small, sharp dot about 14 cm away.</li>
+      <li>Rocker OFF. Tie-wrap the module flat to the top plate, keeping its beam straight and its wires slack.</li>
+    </ol>
+    <p>The rocker powers the laser and the servos together, so a moving bracket would sweep the beam around the room. <strong>With the rocker OFF, pull the laser's + wire out of the WAGO</strong> before stage 6, and leave it out until you have the real board.</p>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>Stage 6: run mode check</h2><span class="time">about 15 min, laser + wire out</span></div>
+    <ol>
+      <li>Rocker OFF. DIP switch <strong>1 ON</strong> and the rest OFF.</li>
+      <li>Rocker ON, hand on it, then run the command below. The bracket should glide slowly to its start position, and everything after that should keep it still.</li>
+      <li>It asks about a "start mark" you don't have yet. Answer <code>y</code> if the bracket moved slowly or stayed put. Answer <code>y</code> to "stay still" if it didn't move during the checks.</li>
+    </ol>
+    <div class="cmd"><pre>.venv\Scripts\python scripts\rig_bringup.py run --port COM4 --draw 1</pre><button type="button">Copy</button></div>
+    <p><span class="pass">Pass: it prints <code>ALL PASS</code>.</span></p>
+    <p>Then test your cut-off. In the console, run <code>r 0 0 0 0 2</code> and turn the rocker OFF during those 2 seconds. Then type <code>p</code>: the ESP32 should still answer. Rocker back ON with your hand on it, then set DIP switches back to OFF.</p>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>If something goes wrong</h2></div>
+    <div class="tablewrap"><table>
+      <tr><th>What you see</th><th>Likely cause</th><th>What to do</th></tr>
+      <tr><td>Hot smell, or a part is hot</td><td>Short or reversed part</td><td>Rocker OFF, unplug adapter and USB. Don't power it again until you find the cause.</td></tr>
+      <tr><td>Fuse blows</td><td>+ and − touching, or a stalled servo</td><td>Unplug, find the cause, then fit a spare 3A fuse. Never bypass it.</td></tr>
+      <tr><td>Servos jitter or ignore commands</td><td>Ground link missing or loose</td><td>Check breadboard ground → WAGO B → GND rail. Recheck orange pins.</td></tr>
+      <tr><td>ESP32 restarts when a servo moves</td><td>Servo power reaching the ESP32, or a weak ground</td><td>Unplug. Check that nothing from the +5V rail touches the ESP32.</td></tr>
+      <tr><td>A servo buzzes and doesn't stop</td><td>Pushing against its end stop</td><td>Rocker OFF. Refit the arm one spline over.</td></tr>
+      <tr><td><code>cannot open COM4</code></td><td>Different port, or another program has it</td><td>Close other consoles, check Device Manager, replug USB.</td></tr>
+      <tr><td><code>E draw</code> or fast LED blink</td><td>DIP pattern isn't 0 to 8</td><td>Fix the switches and press EN.</td></tr>
+    </table></div>
+  </section>
+
+  <section>
+    <div class="stage-title"><h2>When you're done</h2></div>
+    <p>Send me the output of each test, and how far you got. If you run out of time, stop at the end of a finished stage. To travel, take the WAGOs and jumpers off only if they'd get pulled, and photograph the wiring first.</p>
+    <p>The markers, board, camera mount and calibration come next, at home.</p>
+  </section>
+</div>
+
+<script>
+(function () {
+  var L = ["3V3","EN","VP","VN","34","35","32","33","25","26","27","14","12","GND","13","D2","D3","CMD","5V"];
+  var R = ["GND","23","22","TX","RX","21","GND","19","18","5","17","16","4","0","2","15","D1","D0","CLK"];
+  var usedL = {"32":1,"33":1,"25":1,"26":1,"GND":1}, usedR = {"23":1,"19":1,"18":1};
+  var ns = "http://www.w3.org/2000/svg", g = document.getElementById("pins");
+  function add(tag, attrs, text) {
+    var e = document.createElementNS(ns, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text) e.textContent = text;
+    g.appendChild(e);
+  }
+  for (var i = 0; i < 19; i++) {
+    var y = 170 + i * 16;
+    var onL = !!usedL[L[i]], onR = !!usedR[R[i]] || i === 0;
+    add("circle", {cx: 304, cy: y, r: 3, "class": "hole" + (onL ? " on" : "")});
+    add("text", {x: 312, y: y + 4, "class": "pin" + (onL ? " on" : "")}, L[i]);
+    add("circle", {cx: 456, cy: y, r: 3, "class": "hole" + (onR ? " on" : "")});
+    add("text", {x: 448, y: y + 4, "text-anchor": "end", "class": "pin" + (onR ? " on" : "")}, R[i]);
+  }
+  var master = document.getElementById("master");
+  document.querySelectorAll("svg[data-show]").forEach(function (svg) {
+    var show = svg.getAttribute("data-show").split(" ");
+    svg.setAttribute("viewBox", svg.getAttribute("data-view"));
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "Part of the full wiring diagram: " + show.join(", "));
+    Array.prototype.forEach.call(master.children, function (c) {
+      var part = c.cloneNode(true);
+      part.removeAttribute("id");
+      var name = (part.getAttribute("class") || "").replace("p-", "");
+      if (show.indexOf(name) < 0) part.classList.add("dimmed");
+      svg.appendChild(part);
+    });
+  });
+  document.querySelectorAll(".cmd button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var text = b.parentNode.querySelector("pre").textContent;
+      var done = function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy"; }, 1500); };
+      var fallback = function () { var r = document.createRange(); r.selectNodeContents(b.parentNode.querySelector("pre")); var s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+      try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
+    });
+  });
+  document.querySelectorAll(".checks input").forEach(function (c) {
+    try { c.checked = localStorage.getItem("nm-" + c.id) === "1"; } catch (e) {}
+    c.addEventListener("change", function () { try { localStorage.setItem("nm-" + c.id, c.checked ? "1" : "0"); } catch (e) {} });
+  });
+})();
+</script>

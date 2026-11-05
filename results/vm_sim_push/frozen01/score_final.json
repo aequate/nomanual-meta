@@ -1,0 +1,3109 @@
+{
+  "question": "Frozen full-shield rig-like10, gauntlet20Muse+pairedenum, supplementary selection comparisons.",
+  "tier": "combined",
+  "accepted": false,
+  "source_sha256": "c9d95da898d66ce6e6f0e4e6d47ae02c845b1a8bb358d465c32a4bd199ff144a",
+  "runtime_sha256": {
+    "scripts/vm_sim_run.py": "13689a2d386c7b03e3180c543fc99eee49d50ec167482bb29ceaf61f09692577",
+    "scripts/vm_sim_guard.py": "9008aae1b676b00c56c2870f5301013f499913df5c5d920dd7db0c8b5243af51",
+    "scripts/spend_guard.py": "eb3d656f38cfcbbed873d01e947c179a6f20dd4d87970b708d50da415b2adb2d",
+    "scripts/vm_sim_batch.py": "56b5546b98ecc1fa575750aba467c69e16faade46437b03507c40bf2cfd39970",
+    "scripts/vm_sim_score.py": "4c9128b1bc71b4583d573660257f549c34a976494783c5f0387c36a7d26088f2",
+    "nomanual/core/shield.py": "f0592870777c51b0a4907ad6c3921d0117f122998cafbb3057a94ff6f53fd6b8",
+    "bench/configs_export.json": "193eeba648eca8196c9f087163ddfda06322206dc41314c25fd61b1272e4545f"
+  },
+  "groups": [
+    {
+      "id": "rig-like",
+      "scored": 1,
+      "successes": 1,
+      "voids": 29,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8240",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8240",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8241",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8241",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8242",
+      "scored": 1,
+      "successes": 0,
+      "voids": 2,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8242",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8243",
+      "scored": 1,
+      "successes": 1,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8243",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8244",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8244",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8245",
+      "scored": 1,
+      "successes": 1,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8245",
+      "scored": 1,
+      "successes": 1,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8246",
+      "scored": 1,
+      "successes": 1,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8246",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8247",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8247",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8248",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8248",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8249",
+      "scored": 0,
+      "successes": 0,
+      "voids": 3,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8249",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8250",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8250",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8251",
+      "scored": 1,
+      "successes": 0,
+      "voids": 1,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8251",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8252",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8252",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8253",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8253",
+      "scored": 1,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8254",
+      "scored": 1,
+      "successes": 1,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8254",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8255",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8255",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8256",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8256",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8257",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8257",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8258",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8258",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-model-8259",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "gauntlet-enum-8259",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-random-8240",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-fixed-8240",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-random-8241",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-fixed-8241",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-random-8242",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-fixed-8242",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-random-8243",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-fixed-8243",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-random-8244",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-fixed-8244",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-random-8245",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    },
+    {
+      "id": "information-fixed-8245",
+      "scored": 0,
+      "successes": 0,
+      "voids": 0,
+      "hazards": 0
+    }
+  ],
+  "attempts": [
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8260",
+      "noise_seed": 8260,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.44571521002217196
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8261",
+      "noise_seed": 8261,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.42459845999837853
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8262",
+      "noise_seed": 8262,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 2,
+        "failed_calls": 1,
+        "tokens_in": 197,
+        "tokens_out": 149,
+        "reported_usd": 0.0008795,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:20:44.871318+00:00",
+      "elapsed_s": 7.520994527993025
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8263",
+      "noise_seed": 8263,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.9285989900236018
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8264",
+      "noise_seed": 8264,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.41726146900327876
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8265",
+      "noise_seed": 8265,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 2,
+        "failed_calls": 1,
+        "tokens_in": 197,
+        "tokens_out": 322,
+        "reported_usd": 0.00161475,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:21:01.340279+00:00",
+      "elapsed_s": 13.040518587018596
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8266",
+      "noise_seed": 8266,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 2,
+        "failed_calls": 1,
+        "tokens_in": 197,
+        "tokens_out": 118,
+        "reported_usd": 0.00074775,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:21:09.603000+00:00",
+      "elapsed_s": 7.672246347996406
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8267",
+      "noise_seed": 8267,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 2,
+        "failed_calls": 1,
+        "tokens_in": 197,
+        "tokens_out": 67,
+        "reported_usd": 0.000531,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:21:15.770231+00:00",
+      "elapsed_s": 5.285446138994303
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8268",
+      "noise_seed": 8268,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.5809152899892069
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8269",
+      "noise_seed": 8269,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.4134808100061491
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8270",
+      "noise_seed": 8270,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 3,
+        "failed_calls": 1,
+        "tokens_in": 1130,
+        "tokens_out": 325,
+        "reported_usd": 0.00279375,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:21:45.644987+00:00",
+      "elapsed_s": 41.62300684800721
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8271",
+      "noise_seed": 8271,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.4833263400068972
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8272",
+      "noise_seed": 8272,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.7804647099983413
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8273",
+      "noise_seed": 8273,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.5459110490046442
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8274",
+      "noise_seed": 8274,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 2,
+        "failed_calls": 1,
+        "tokens_in": 197,
+        "tokens_out": 112,
+        "reported_usd": 0.00072225,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:22:13.009143+00:00",
+      "elapsed_s": 9.565413067990448
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8275",
+      "noise_seed": 8275,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.4336263000150211
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8276",
+      "noise_seed": 8276,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 3,
+        "failed_calls": 1,
+        "tokens_in": 1131,
+        "tokens_out": 371,
+        "reported_usd": 0.0029904999999999997,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:22:40.033126+00:00",
+      "elapsed_s": 40.40511733898893
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8277",
+      "noise_seed": 8277,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.4298017100081779
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8278",
+      "noise_seed": 8278,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": true,
+      "hazards": 0,
+      "audit": {
+        "calls": 12,
+        "failed_calls": 0,
+        "tokens_in": 33849,
+        "tokens_out": 10451,
+        "reported_usd": 0.086728,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 32,
+            "wall_s": 101.3665,
+            "sim_s": 64.5
+          }
+        ],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "swap",
+            "experiment": 32,
+            "wall_s": 101.2362968820089,
+            "sim_s": 62.0,
+            "detected": true,
+            "delay_experiments": 1,
+            "delay_wall_s": 0.13020311799110118,
+            "delay_sim_s": 2.5
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 32,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": true,
+          "experiments": 33,
+          "reason": ""
+        },
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 21,
+          "reason": ""
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:23:02.915966+00:00",
+      "elapsed_s": 388.8017892820062
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8279",
+      "noise_seed": 8279,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.43522055898210965
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8280",
+      "noise_seed": 8280,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.4106398099975195
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8281",
+      "noise_seed": 8281,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.4116357399907429
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8282",
+      "noise_seed": 8282,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.40669167999294586
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8283",
+      "noise_seed": 8283,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.41800352997961454
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8284",
+      "noise_seed": 8284,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 2,
+        "failed_calls": 1,
+        "tokens_in": 197,
+        "tokens_out": 139,
+        "reported_usd": 0.000837,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:29:38.937733+00:00",
+      "elapsed_s": 7.624639178015059
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8285",
+      "noise_seed": 8285,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 6,
+        "failed_calls": 1,
+        "tokens_in": 9364,
+        "tokens_out": 6162,
+        "reported_usd": 0.0378935,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:29:44.898735+00:00",
+      "elapsed_s": 296.21643292700173
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8286",
+      "noise_seed": 8286,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.45306458001141436
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8287",
+      "noise_seed": 8287,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.38030097002047114
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8288",
+      "noise_seed": 8288,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.4277218700153753
+    },
+    {
+      "group": "rig-like",
+      "out": "runs/vm_sim_push/frozen01_rig_8289",
+      "noise_seed": 8289,
+      "machine_seed": null,
+      "arm": "model",
+      "provider": "fireworks",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": null,
+      "elapsed_s": 0.4230966999894008
+    },
+    {
+      "group": "gauntlet-model-8240",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8240_8240",
+      "noise_seed": 8240,
+      "machine_seed": 8240,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 13,
+        "failed_calls": 0,
+        "tokens_in": 29554,
+        "tokens_out": 28978,
+        "reported_usd": 0.160099,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 24,
+            "wall_s": 125.4346,
+            "sim_s": 48.9
+          },
+          {
+            "experiment": 66,
+            "wall_s": 262.1064,
+            "sim_s": 95.1
+          }
+        ],
+        "false_alarms": 1,
+        "false_alarms_per_100_experiments": 1.4705882352941178,
+        "changes": [
+          {
+            "kind": "swap",
+            "experiment": 66,
+            "wall_s": 261.3624375969812,
+            "sim_s": 92.6,
+            "detected": true,
+            "delay_experiments": 1,
+            "delay_wall_s": 0.743962403018827,
+            "delay_sim_s": 2.5
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 66,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": false,
+          "experiments": 2,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:20:40.317481+00:00",
+      "elapsed_s": 308.7124357740104
+    },
+    {
+      "group": "gauntlet-enum-8240",
+      "out": "runs/vm_sim_push/frozen01_genum_8240_8240",
+      "noise_seed": 8240,
+      "machine_seed": 8240,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 21,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:25:47.310919+00:00",
+      "elapsed_s": 18.755299913987983
+    },
+    {
+      "group": "gauntlet-model-8241",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8241_8241",
+      "noise_seed": 8241,
+      "machine_seed": 8241,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 14,
+        "failed_calls": 0,
+        "tokens_in": 54234,
+        "tokens_out": 35028,
+        "reported_usd": 0.2166615,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 95,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:26:09.870293+00:00",
+      "elapsed_s": 360.0512768299959
+    },
+    {
+      "group": "gauntlet-enum-8241",
+      "out": "runs/vm_sim_push/frozen01_genum_8241_8241",
+      "noise_seed": 8241,
+      "machine_seed": 8241,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 64,
+            "wall_s": 59.3887,
+            "sim_s": 77.2
+          }
+        ],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "double_swap",
+            "experiment": 63,
+            "wall_s": 51.388828574999934,
+            "sim_s": 72.2,
+            "detected": true,
+            "delay_experiments": 2,
+            "delay_wall_s": 7.999871425000066,
+            "delay_sim_s": 5.0
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 63,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": false,
+          "experiments": 31,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:32:06.812004+00:00",
+      "elapsed_s": 85.60958813599427
+    },
+    {
+      "group": "gauntlet-model-8242",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8242_8242",
+      "noise_seed": 8242,
+      "machine_seed": 8242,
+      "arm": "model",
+      "provider": "meta",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 13,
+        "failed_calls": 1,
+        "tokens_in": 29676,
+        "tokens_out": 27469,
+        "reported_usd": 0.15383825,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "reverse",
+            "experiment": 50,
+            "wall_s": 217.1709685990063,
+            "sim_s": 84.45,
+            "detected": false,
+            "delay_experiments": null,
+            "delay_wall_s": null,
+            "delay_sim_s": null
+          }
+        ]
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:33:36.013327+00:00",
+      "elapsed_s": 411.4292098850128
+    },
+    {
+      "group": "gauntlet-model-8242",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8242_8304",
+      "noise_seed": 8304,
+      "machine_seed": 8242,
+      "arm": "model",
+      "provider": "meta",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 22,
+        "failed_calls": 1,
+        "tokens_in": 58655,
+        "tokens_out": 56339,
+        "reported_usd": 0.3127595,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 51,
+            "wall_s": 247.4247,
+            "sim_s": 86.4
+          },
+          {
+            "experiment": 64,
+            "wall_s": 333.0149,
+            "sim_s": 111.9
+          }
+        ],
+        "false_alarms": 1,
+        "false_alarms_per_100_experiments": 0.8,
+        "changes": [
+          {
+            "kind": "reverse",
+            "experiment": 51,
+            "wall_s": 192.48289043601835,
+            "sim_s": 83.9,
+            "detected": true,
+            "delay_experiments": 1,
+            "delay_wall_s": 54.94180956398165,
+            "delay_sim_s": 2.5
+          }
+        ]
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:40:27.045852+00:00",
+      "elapsed_s": 728.8691893270006
+    },
+    {
+      "group": "gauntlet-model-8242",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8242_8305",
+      "noise_seed": 8305,
+      "machine_seed": 8242,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 10,
+        "failed_calls": 0,
+        "tokens_in": 17652,
+        "tokens_out": 14370,
+        "reported_usd": 0.0831375,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 19,
+            "wall_s": 113.8839,
+            "sim_s": 24.2
+          }
+        ],
+        "false_alarms": 1,
+        "false_alarms_per_100_experiments": 3.125,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 32,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:52:37.107301+00:00",
+      "elapsed_s": 266.28701147501124
+    },
+    {
+      "group": "gauntlet-enum-8242",
+      "out": "runs/vm_sim_push/frozen01_genum_8242_8305",
+      "noise_seed": 8305,
+      "machine_seed": 8242,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 19,
+            "wall_s": 38.9743,
+            "sim_s": 24.2
+          }
+        ],
+        "false_alarms": 1,
+        "false_alarms_per_100_experiments": 3.125,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 32,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:57:01.145850+00:00",
+      "elapsed_s": 91.82521970401285
+    },
+    {
+      "group": "gauntlet-model-8243",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8243_8243",
+      "noise_seed": 8243,
+      "machine_seed": 8243,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": true,
+      "hazards": 0,
+      "audit": {
+        "calls": 17,
+        "failed_calls": 0,
+        "tokens_in": 68972,
+        "tokens_out": 73739,
+        "reported_usd": 0.39960575,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "dead",
+            "experiment": 55,
+            "wall_s": 179.92340157998842,
+            "sim_s": 85.1,
+            "detected": false,
+            "delay_experiments": null,
+            "delay_wall_s": null,
+            "delay_sim_s": null
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 55,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": true,
+          "experiments": 54,
+          "reason": ""
+        },
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 21,
+          "reason": ""
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:34:46.399579+00:00",
+      "elapsed_s": 761.3712526169838
+    },
+    {
+      "group": "gauntlet-enum-8243",
+      "out": "runs/vm_sim_push/frozen01_genum_8243_8243",
+      "noise_seed": 8243,
+      "machine_seed": 8243,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 116,
+            "wall_s": 155.3565,
+            "sim_s": 220.2
+          }
+        ],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "dead",
+            "experiment": 72,
+            "wall_s": 86.76240812600008,
+            "sim_s": 153.1,
+            "detected": true,
+            "delay_experiments": 45,
+            "delay_wall_s": 68.59409187399993,
+            "delay_sim_s": 67.1
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 72,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": true,
+          "experiments": 69,
+          "reason": ""
+        },
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 4,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:47:25.704143+00:00",
+      "elapsed_s": 201.37281613401137
+    },
+    {
+      "group": "gauntlet-model-8244",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8244_8244",
+      "noise_seed": 8244,
+      "machine_seed": 8244,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 0,
+        "tokens_in": 65,
+        "tokens_out": 332,
+        "reported_usd": 0.00149225,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 0,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:50:51.573710+00:00",
+      "elapsed_s": 7.829660698014777
+    },
+    {
+      "group": "gauntlet-enum-8244",
+      "out": "runs/vm_sim_push/frozen01_genum_8244_8244",
+      "noise_seed": 8244,
+      "machine_seed": 8244,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 0,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:50:55.589426+00:00",
+      "elapsed_s": 3.641443648986751
+    },
+    {
+      "group": "gauntlet-model-8245",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8245_8245",
+      "noise_seed": 8245,
+      "machine_seed": 8245,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": true,
+      "hazards": 0,
+      "audit": {
+        "calls": 16,
+        "failed_calls": 0,
+        "tokens_in": 49929,
+        "tokens_out": 30764,
+        "reported_usd": 0.19315825,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "mode",
+            "experiment": 42,
+            "wall_s": 187.49238011799753,
+            "sim_s": 73.9,
+            "detected": false,
+            "delay_experiments": null,
+            "delay_wall_s": null,
+            "delay_sim_s": null
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 42,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": true,
+          "experiments": 33,
+          "reason": ""
+        },
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 26,
+          "reason": ""
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:51:02.981233+00:00",
+      "elapsed_s": 357.7194349000056
+    },
+    {
+      "group": "gauntlet-enum-8245",
+      "out": "runs/vm_sim_push/frozen01_genum_8245_8245",
+      "noise_seed": 8245,
+      "machine_seed": 8245,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": true,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "mode",
+            "experiment": 70,
+            "wall_s": 48.33716055599507,
+            "sim_s": 103.1,
+            "detected": false,
+            "delay_experiments": null,
+            "delay_wall_s": null,
+            "delay_sim_s": null
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 70,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": true,
+          "experiments": 88,
+          "reason": ""
+        },
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 32,
+          "reason": ""
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:56:58.142385+00:00",
+      "elapsed_s": 157.0147480359883
+    },
+    {
+      "group": "gauntlet-model-8246",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8246_8246",
+      "noise_seed": 8246,
+      "machine_seed": 8246,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": true,
+      "hazards": 0,
+      "audit": {
+        "calls": 28,
+        "failed_calls": 0,
+        "tokens_in": 102248,
+        "tokens_out": 70518,
+        "reported_usd": 0.4275115,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 46,
+            "wall_s": 164.2401,
+            "sim_s": 55.4
+          }
+        ],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "swap",
+            "experiment": 46,
+            "wall_s": 163.33225127399783,
+            "sim_s": 54.4,
+            "detected": true,
+            "delay_experiments": 1,
+            "delay_wall_s": 0.9078487260021859,
+            "delay_sim_s": 1.0
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 46,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": true,
+          "experiments": 76,
+          "reason": ""
+        },
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 88,
+          "reason": ""
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:58:39.188046+00:00",
+      "elapsed_s": 873.1058867060055
+    },
+    {
+      "group": "gauntlet-enum-8246",
+      "out": "runs/vm_sim_push/frozen01_genum_8246_8246",
+      "noise_seed": 8246,
+      "machine_seed": 8246,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 88,
+            "wall_s": 69.5407,
+            "sim_s": 102.05
+          }
+        ],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "swap",
+            "experiment": 88,
+            "wall_s": 65.59594715200365,
+            "sim_s": 101.05,
+            "detected": true,
+            "delay_experiments": 1,
+            "delay_wall_s": 3.944752847996355,
+            "delay_sim_s": 1.0
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 88,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": false,
+          "experiments": 1,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T18:13:07.395516+00:00",
+      "elapsed_s": 71.52058282998041
+    },
+    {
+      "group": "gauntlet-model-8247",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8247_8247",
+      "noise_seed": 8247,
+      "machine_seed": 8247,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 18,
+        "failed_calls": 0,
+        "tokens_in": 38116,
+        "tokens_out": 37004,
+        "reported_usd": 0.204912,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 15,
+            "wall_s": 141.2834,
+            "sim_s": 19.9
+          },
+          {
+            "experiment": 48,
+            "wall_s": 289.7422,
+            "sim_s": 69.4
+          },
+          {
+            "experiment": 80,
+            "wall_s": 373.9178,
+            "sim_s": 116.1
+          }
+        ],
+        "false_alarms": 1,
+        "false_alarms_per_100_experiments": 1.2048192771084338,
+        "changes": [
+          {
+            "kind": "double_swap",
+            "experiment": 48,
+            "wall_s": 289.6456453189894,
+            "sim_s": 66.9,
+            "detected": true,
+            "delay_experiments": 1,
+            "delay_wall_s": 0.09655468101061615,
+            "delay_sim_s": 2.5
+          },
+          {
+            "kind": "double_swap",
+            "experiment": 80,
+            "wall_s": 373.0970077359816,
+            "sim_s": 113.60000000000001,
+            "detected": true,
+            "delay_experiments": 1,
+            "delay_wall_s": 0.8207922640183938,
+            "delay_sim_s": 2.499999999999986
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 48,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": true,
+          "experiments": 32,
+          "reason": ""
+        },
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 3,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T17:59:39.347864+00:00",
+      "elapsed_s": 410.2512890450016
+    },
+    {
+      "group": "gauntlet-enum-8247",
+      "out": "runs/vm_sim_push/frozen01_genum_8247_8247",
+      "noise_seed": 8247,
+      "machine_seed": 8247,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 61,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T18:06:26.640481+00:00",
+      "elapsed_s": 57.663868613977684
+    },
+    {
+      "group": "gauntlet-model-8248",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8248_8248",
+      "noise_seed": 8248,
+      "machine_seed": 8248,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 9,
+        "failed_calls": 0,
+        "tokens_in": 21744,
+        "tokens_out": 16000,
+        "reported_usd": 0.09518,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 51,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T18:07:28.163070+00:00",
+      "elapsed_s": 173.9816850310017
+    },
+    {
+      "group": "gauntlet-enum-8248",
+      "out": "runs/vm_sim_push/frozen01_genum_8248_8248",
+      "noise_seed": 8248,
+      "machine_seed": 8248,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 96,
+            "wall_s": 147.6808,
+            "sim_s": 119.5
+          }
+        ],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "reverse",
+            "experiment": 88,
+            "wall_s": 124.33868420499493,
+            "sim_s": 101.00000000000001,
+            "detected": true,
+            "delay_experiments": 9,
+            "delay_wall_s": 23.34211579500507,
+            "delay_sim_s": 18.499999999999986
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 88,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": false,
+          "experiments": 200,
+          "reason": "experiment budget (200) used up"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T18:10:19.632273+00:00",
+      "elapsed_s": 488.99440709201735
+    },
+    {
+      "group": "gauntlet-model-8249",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8249_8249",
+      "noise_seed": 8249,
+      "machine_seed": 8249,
+      "arm": "model",
+      "provider": "meta",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 21,
+        "failed_calls": 1,
+        "tokens_in": 42314,
+        "tokens_out": 45356,
+        "reported_usd": 0.2456555,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 23,
+            "wall_s": 142.0456,
+            "sim_s": 44.4
+          },
+          {
+            "experiment": 30,
+            "wall_s": 311.9753,
+            "sim_s": 58.9
+          },
+          {
+            "experiment": 41,
+            "wall_s": 383.0734,
+            "sim_s": 73.4
+          }
+        ],
+        "false_alarms": 3,
+        "false_alarms_per_100_experiments": 3.658536585365854,
+        "changes": [
+          {
+            "kind": "dead",
+            "experiment": 79,
+            "wall_s": 509.061315287021,
+            "sim_s": 118.15,
+            "detected": false,
+            "delay_experiments": null,
+            "delay_wall_s": null,
+            "delay_sim_s": null
+          }
+        ]
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T18:14:23.093281+00:00",
+      "elapsed_s": 633.2237552320003
+    },
+    {
+      "group": "gauntlet-model-8249",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8249_8318",
+      "noise_seed": 8318,
+      "machine_seed": 8249,
+      "arm": "model",
+      "provider": "meta",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 15,
+        "failed_calls": 1,
+        "tokens_in": 35847,
+        "tokens_out": 33214,
+        "reported_usd": 0.18596825,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 9,
+            "wall_s": 87.6252,
+            "sim_s": 13.4
+          },
+          {
+            "experiment": 20,
+            "wall_s": 159.2502,
+            "sim_s": 31.6
+          }
+        ],
+        "false_alarms": 2,
+        "false_alarms_per_100_experiments": 2.7027027027027026,
+        "changes": [
+          {
+            "kind": "dead",
+            "experiment": 62,
+            "wall_s": 304.83492175501306,
+            "sim_s": 84.65,
+            "detected": false,
+            "delay_experiments": null,
+            "delay_wall_s": null,
+            "delay_sim_s": null
+          }
+        ]
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T19:52:37.963294+00:00",
+      "elapsed_s": 461.7319081609894
+    },
+    {
+      "group": "gauntlet-model-8249",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8249_8319",
+      "noise_seed": 8319,
+      "machine_seed": 8249,
+      "arm": "model",
+      "provider": "meta",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 8,
+        "failed_calls": 1,
+        "tokens_in": 14153,
+        "tokens_out": 29414,
+        "reported_usd": 0.14270075,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T20:00:19.748550+00:00",
+      "elapsed_s": 425.83797843099455
+    },
+    {
+      "group": "gauntlet-model-8250",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8250_8250",
+      "noise_seed": 8250,
+      "machine_seed": 8250,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 23,
+        "failed_calls": 0,
+        "tokens_in": 114138,
+        "tokens_out": 60581,
+        "reported_usd": 0.40014175,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 200,
+          "reason": "experiment budget (200) used up"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T19:46:13.278243+00:00",
+      "elapsed_s": 749.292890990997
+    },
+    {
+      "group": "gauntlet-enum-8250",
+      "out": "runs/vm_sim_push/frozen01_genum_8250_8250",
+      "noise_seed": 8250,
+      "machine_seed": 8250,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 22,
+            "wall_s": 17.9612,
+            "sim_s": 31.7
+          }
+        ],
+        "false_alarms": 1,
+        "false_alarms_per_100_experiments": 4.166666666666667,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 24,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T19:58:41.241150+00:00",
+      "elapsed_s": 23.69819907398778
+    },
+    {
+      "group": "gauntlet-model-8251",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8251_8251",
+      "noise_seed": 8251,
+      "machine_seed": 8251,
+      "arm": "model",
+      "provider": "meta",
+      "status": "VOID",
+      "scored": false,
+      "void": true,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 10,
+        "failed_calls": 1,
+        "tokens_in": 15695,
+        "tokens_out": 14184,
+        "reported_usd": 0.07990074999999999,
+        "unknown_usage_calls": 1,
+        "failed_reply_fallbacks": 0,
+        "void": true
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": [
+          {
+            "kind": "mode",
+            "experiment": 39,
+            "wall_s": 163.29857212401112,
+            "sim_s": 58.9,
+            "detected": false,
+            "delay_experiments": null,
+            "delay_wall_s": null,
+            "delay_sim_s": null
+          }
+        ]
+      },
+      "tasks": [],
+      "issues": [],
+      "full_started_utc": "2026-11-04T19:59:08.446077+00:00",
+      "elapsed_s": 287.2760545289784
+    },
+    {
+      "group": "gauntlet-model-8251",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8251_8322",
+      "noise_seed": 8322,
+      "machine_seed": 8251,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 25,
+        "failed_calls": 0,
+        "tokens_in": 100893,
+        "tokens_out": 55260,
+        "reported_usd": 0.36097124999999997,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 190,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T20:03:55.759539+00:00",
+      "elapsed_s": 761.2100153880019
+    },
+    {
+      "group": "gauntlet-model-8252",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8252_8252",
+      "noise_seed": 8252,
+      "machine_seed": 8252,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 4,
+        "failed_calls": 0,
+        "tokens_in": 4149,
+        "tokens_out": 5235,
+        "reported_usd": 0.027434999999999998,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 4,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T20:07:26.394312+00:00",
+      "elapsed_s": 91.73515626401058
+    },
+    {
+      "group": "gauntlet-enum-8252",
+      "out": "runs/vm_sim_push/frozen01_genum_8252_8252",
+      "noise_seed": 8252,
+      "machine_seed": 8252,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 4,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T20:08:55.529511+00:00",
+      "elapsed_s": 24.227018023026176
+    },
+    {
+      "group": "gauntlet-model-8253",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8253_8253",
+      "noise_seed": 8253,
+      "machine_seed": 8253,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 1,
+        "failed_calls": 0,
+        "tokens_in": 65,
+        "tokens_out": 275,
+        "reported_usd": 0.00125,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 0,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T20:09:23.991147+00:00",
+      "elapsed_s": 7.438916127983248
+    },
+    {
+      "group": "gauntlet-enum-8253",
+      "out": "runs/vm_sim_push/frozen01_genum_8253_8253",
+      "noise_seed": 8253,
+      "machine_seed": 8253,
+      "arm": "enum",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": false,
+      "hazards": 0,
+      "audit": {
+        "calls": 0,
+        "failed_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "reported_usd": 0,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [],
+        "false_alarms": 0,
+        "false_alarms_per_100_experiments": 0.0,
+        "changes": []
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": false,
+          "experiments": 0,
+          "reason": "no action passes the shield"
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T20:09:28.684931+00:00",
+      "elapsed_s": 3.6964462789765093
+    },
+    {
+      "group": "gauntlet-model-8254",
+      "out": "runs/vm_sim_push/frozen01_gmodel_8254_8254",
+      "noise_seed": 8254,
+      "machine_seed": 8254,
+      "arm": "model",
+      "provider": "meta",
+      "status": "completed",
+      "scored": true,
+      "void": false,
+      "success": true,
+      "hazards": 0,
+      "audit": {
+        "calls": 24,
+        "failed_calls": 0,
+        "tokens_in": 68805,
+        "tokens_out": 59692,
+        "reported_usd": 0.33969725,
+        "unknown_usage_calls": 0,
+        "failed_reply_fallbacks": 0,
+        "void": false
+      },
+      "metrics": {
+        "alarms": [
+          {
+            "experiment": 24,
+            "wall_s": 139.2447,
+            "sim_s": 30.85
+          },
+          {
+            "experiment": 75,
+            "wall_s": 415.4413,
+            "sim_s": 127.05
+          }
+        ],
+        "false_alarms": 1,
+        "false_alarms_per_100_experiments": 0.7246376811594203,
+        "changes": [
+          {
+            "kind": "reverse",
+            "experiment": 75,
+            "wall_s": 344.63570916300523,
+            "sim_s": 124.55,
+            "detected": true,
+            "delay_experiments": 1,
+            "delay_wall_s": 70.80559083699478,
+            "delay_sim_s": 2.5
+          }
+        ]
+      },
+      "tasks": [
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 75,
+          "reason": ""
+        },
+        {
+          "name": "park",
+          "success": true,
+          "experiments": 38,
+          "reason": ""
+        },
+        {
+          "name": "reach",
+          "success": true,
+          "experiments": 25,
+          "reason": ""
+        }
+      ],
+      "issues": [],
+      "full_started_utc": "2026-11-04T20:09:35.879408+00:00",
+      "elapsed_s": 683.6683528989961
+    }
+  ],
+  "rig_like": {
+    "scored": 1,
+    "successes": 1,
+    "hazards": 0,
+    "accepted": false
+  },
+  "issues": [
+    "rig-like: expected 10 scored, found 1",
+    "gauntlet-model-8249: expected 1 scored, found 0",
+    "gauntlet-enum-8249: expected 1 scored, found 0",
+    "gauntlet-enum-8251: expected 1 scored, found 0",
+    "gauntlet-enum-8254: expected 1 scored, found 0",
+    "gauntlet-model-8255: expected 1 scored, found 0",
+    "gauntlet-enum-8255: expected 1 scored, found 0",
+    "gauntlet-model-8256: expected 1 scored, found 0",
+    "gauntlet-enum-8256: expected 1 scored, found 0",
+    "gauntlet-model-8257: expected 1 scored, found 0",
+    "gauntlet-enum-8257: expected 1 scored, found 0",
+    "gauntlet-model-8258: expected 1 scored, found 0",
+    "gauntlet-enum-8258: expected 1 scored, found 0",
+    "gauntlet-model-8259: expected 1 scored, found 0",
+    "gauntlet-enum-8259: expected 1 scored, found 0",
+    "information-random-8240: expected 1 scored, found 0",
+    "information-fixed-8240: expected 1 scored, found 0",
+    "information-random-8241: expected 1 scored, found 0",
+    "information-fixed-8241: expected 1 scored, found 0",
+    "information-random-8242: expected 1 scored, found 0",
+    "information-fixed-8242: expected 1 scored, found 0",
+    "information-random-8243: expected 1 scored, found 0",
+    "information-fixed-8243: expected 1 scored, found 0",
+    "information-random-8244: expected 1 scored, found 0",
+    "information-fixed-8244: expected 1 scored, found 0",
+    "information-random-8245: expected 1 scored, found 0",
+    "information-fixed-8245: expected 1 scored, found 0",
+    "rig-like target requires8of10 and0hazards: {'scored': 1, 'successes': 1, 'hazards': 0, 'accepted': False}"
+  ],
+  "simulation_not_hardware": true
+}

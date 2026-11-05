@@ -1,0 +1,33 @@
+{
+ "status": "success",
+ "tasks": [
+  {
+   "name": "reach",
+   "success": true,
+   "experiments": 38,
+   "reason": ""
+  },
+  {
+   "name": "park",
+   "success": true,
+   "experiments": 21,
+   "reason": ""
+  },
+  {
+   "name": "reach",
+   "success": true,
+   "experiments": 13,
+   "reason": ""
+  }
+ ],
+ "experiments": 72,
+ "shield_interventions": 0,
+ "alarms": [
+  12,
+  39
+ ],
+ "repairs_accepted": 2,
+ "wall_s": 580.4,
+ "laptop_stop": null,
+ "model": "fireworks accounts/fireworks/models/muse-spark-open"
+}

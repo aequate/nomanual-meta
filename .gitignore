@@ -1,0 +1,14 @@
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+node_modules/
+web/dist/
+firmware/.pio/
+runs/
+*.env
+.env*
+logs/
+web/fixtures/lab-*
+web/fixtures/*.rewire
